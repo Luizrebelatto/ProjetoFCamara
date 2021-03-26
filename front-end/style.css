@@ -10,15 +10,12 @@
 
 nav {
     width: 100%;
-    background: #34495e;
+    background: #e8c4ff;
 }
 
-label.logo {
-    font-size: 35px;
-    font-weight: bold;
-    color: #8f5fc0;
-    padding: 0 100px;
-    line-height: 80px;
+.logo {
+    width: 200px;
+}
 }
 
 nav ul {
@@ -51,6 +48,11 @@ a.cadastro {
     font-size: 12px;
     border: 1px solid #fff;
     border-radius: 3px;
+}
+
+a:hover{
+    color: rgb(134, 9, 172);
+    text-decoration: underline;
 }
 
 nav #icon {
@@ -87,6 +89,7 @@ nav #icon {
     border-radius: 3px;
     border-bottom: 5px solid #8f5fc0;
     align-items: center;
+    margin-bottom: 15px;
 
 }
 .login-form>form {
@@ -128,20 +131,24 @@ input[type="submit"]:hover {
 footer {
     background: #f1f1f1;
     padding: 90px 0;
+    height: 10em;
+    position: relative;
 }
 
 .footer-container {
 
     max-width: 1300px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%)
 }
 
-.logo-educadoe {
+.logo-educadoefooter {
     width: 180px;
 }
 
