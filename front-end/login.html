@@ -17,32 +17,6 @@
     
     <title>Educa.doe - Login</title>
 
-    <script>
-
-        $(document).ready(function(){
-             $('#icon').click(function(){
-                 $('ul').toggleClass('show');
-             })
-        });
-
-        $(document).ready(function(){
-            var arrow = $(".arrow-up");
-            var form = $(".login-form");
-            var status = false;
-            $(".login").click(function(event){
-                event.preventDefault();
-               if(status == false) {
-                   form.fadeIn();
-                   status = true;
-               } else {
-                   form.fadeOut();
-                   status = false;
-               }
-            })
-        })
-
-    </script>
-
 </head>
 <body>
 
@@ -68,29 +42,38 @@
         </li>
         <li class="nav-item">
            <li>  <a class="nav-link" href="#">Receba doação</a></li>
-        </li>    
+        </li>
         <li>
-          <a  class ="login" href="#">CADASTRE-SE</a>
-        </li>    
-        <li>
-            <a  class ="login" href="login.html">LOGIN</a>
-
-          </li> 
-      </ul>
+            <a  class ="login" href="#">CADASTRE-SE</a>
+          </li>    
+          <li>
+              <a  class ="login" href="login.html">LOGIN</a>
+  
+            </li> 
+        </ul>
   
 </nav>
 
 <div class="container">
     <div class="row">
 
-        <div class="col-sm-12">
+        <div class="col-sm-6">
+            <h2>EDUCA.DOE</h2>
+
+               <h5>Lorem ipsum diam etiam integer orci, metus mattis odio aliquam ultricies, viverra vivamus velit nec. 
+                   dictumst ornare magna at urna dolor lacinia nibh nunc vivamus, nullam nam libero nostra diam aptent praesent orci duis,
+                   mollis erat maecenas tristique quam litora id quisque. lacinia platea odio aliquet duis potenti bibendum tempor semper quisque,  </h5>
+
+           </div>
+
+        <div class="col-sm-6">
             <div class="login-form">
             <form>
-            <label>Usuário</label>
+            <label>Digite seu usuário:</label>
             <div>
             <input type="text" placeholder="Usuário" required/>
             </div>
-            <label>Senha</label>
+            <label>Digite sua senha:</label>
             <div>
             <input type="password" placeholder="Senha" required/>
         </div>

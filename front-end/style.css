@@ -41,7 +41,13 @@ nav a {
     border-radius: 3px;
 }
 
-.login {
+a.login {
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+a.cadastro {
     font-size: 12px;
     border: 1px solid #fff;
     border-radius: 3px;
@@ -73,14 +79,14 @@ nav #icon {
 }
 
 .login-form {
-    width: 300px;
+    width: 500px;
     height: auto;
     z-index: 5;
-    background: #34495e;
+    background: #e3d1ee;
     right: 140px;
     border-radius: 3px;
     border-bottom: 5px solid #8f5fc0;
-    display: none;
+    align-items: center;
 
 }
 .login-form>form {
