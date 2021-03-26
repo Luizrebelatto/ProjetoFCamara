@@ -124,3 +124,37 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #8f5fc0
 }
+
+footer {
+    background: #f1f1f1;
+    padding: 90px 0;
+}
+
+.footer-container {
+
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.logo-educadoe {
+    width: 180px;
+}
+
+.social-media {
+    margin: 20px 20px;
+    
+}
+
+.social-media {
+    color: #8f5fc0;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+
+}
