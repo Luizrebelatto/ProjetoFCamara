@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     
     <link rel="stylesheet" href="style.css">
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
-    <title>Educa.doe - Home</title>
+    <title>Educa.doe - Login</title>
 
     <script>
 
@@ -24,6 +24,22 @@
                  $('ul').toggleClass('show');
              })
         });
+
+        $(document).ready(function(){
+            var arrow = $(".arrow-up");
+            var form = $(".login-form");
+            var status = false;
+            $(".login").click(function(event){
+                event.preventDefault();
+               if(status == false) {
+                   form.fadeIn();
+                   status = true;
+               } else {
+                   form.fadeOut();
+                   status = false;
+               }
+            })
+        })
 
     </script>
 
@@ -64,36 +80,35 @@
   
 </nav>
 
-    <div class="container">
-        <div class="row">
+<div class="container">
+    <div class="row">
 
-            <div class="col-sm-4">
-             <h2>EDUCA.DOE</h2>
-
-                <h5>Lorem ipsum diam etiam integer orci, metus mattis odio aliquam ultricies, viverra vivamus velit nec. 
-                    dictumst ornare magna at urna dolor lacinia nibh nunc vivamus, nullam nam libero nostra diam aptent praesent orci duis,
-                    mollis erat maecenas tristique quam litora id quisque. lacinia platea odio aliquet duis potenti bibendum tempor semper quisque,  </h5>
-
+        <div class="col-sm-12">
+            <div class="login-form">
+            <form>
+            <label>Usuário</label>
+            <div>
+            <input type="text" placeholder="Usuário" required/>
             </div>
-
-            <div class="col-sm-8">
-                <img src= https://www.itau.com.br/content/dam/itau/varejo/leia-2019/criancas-estudando-fundacao-itau.jpg class="fotohome">
-             </div>
-
-      </div>   
-
-      <div class="row">
-
-         <div class="col-sm-12">
-      
-            <h5>Lorem ipsum diam etiam integer orci, metus mattis odio aliquam ultricies, viverra vivamus velit nec. 
-                dictumst ornare magna at urna dolor lacinia nibh nunc vivamus, nullam nam libero nostra diam aptent praesent orci duis,
-                mollis erat maecenas tristique quam litora id quisque. lacinia platea odio aliquet duis potenti bibendum tempor semper quisque,  </h5>
-
-         </div>
+            <label>Senha</label>
+            <div>
+            <input type="password" placeholder="Senha" required/>
+        </div>
+        
+            <div>
+            <input type="submit" value="Log In"/>
+            </div>
+            
+            <div>
+            <a href="#">Esqueceu sua senha?</a>
+            </div>
+            </form>
 
         </div>
 </div>
+</div>
+</div>
+
 
 </body>
 </html>
