@@ -45,6 +45,7 @@ nav a {
 a.active, a:hover {
     border: 1px solid #8f5fc0;
     transition: .5s;
+    width: 100%;
 }
 
 a.login {
@@ -63,8 +64,16 @@ nav #icon {
     display: none;
 }
 
+.fotohome {
+    height: 450px;
+    background-size: 100% 100%;
+    width: 100%;
+}
 
-
+.container {
+    margin-top:30px;
+    width: 100%;
+}
 
 @media (max-width:1048px)
 {
@@ -77,6 +86,10 @@ nav #icon {
     }
     nav a {
         font-size: 17px;
+    }
+
+    .container {
+        width:100%;
     }
 }
 
@@ -107,6 +120,10 @@ nav #icon {
     }
     nav ul.show {
         left: 0;
-
     }
+
+    .container {
+        width:100%;
+    }
+
 }
