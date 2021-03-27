@@ -22,7 +22,7 @@ nav ul {
     float: right;
     margin-right: 10px;
 }
-
+ 
 nav li {
     display: inline-block;
     margin: 0 8px;
@@ -86,10 +86,12 @@ p{
     margin-top: 80px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .login-form {
-    width: 500px;
-    height: auto;
-    z-index: 5;
+    width: 100%;
     background: #e3d1ee;
     right: 140px;
     border-radius: 3px;
