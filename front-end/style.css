@@ -38,7 +38,7 @@ nav a {
     border-radius: 3px;
 }
 
-a.login {
+.login {
     font-size: 12px;
     border: 1px solid #fff;
     border-radius: 3px;
@@ -69,6 +69,12 @@ nav #icon {
     height: 400px;
     background-size: 100% 100%;
     width: 100%;
+    padding: 10px 10px;
+}
+
+p{
+    text-align: justify;
+    padding: 10px 30px 30px 10px;
 }
 
 .container {
@@ -128,6 +134,13 @@ input[type="submit"]:hover {
     background: #8f5fc0
 }
 
+.faixa {
+
+    background-color: #8f5fc0;
+    width: 100%;
+    height: 300px;
+}
+
 footer {
     background: #f1f1f1;
     padding: 90px 0;
@@ -165,3 +178,4 @@ footer {
     transition: .3s linear;
 
 }
+
