@@ -180,3 +180,30 @@ footer {
 
 }
 
+.doador h2 {
+    text-align: left;
+    position: absolute;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    
+}
+
+.donatario h2 {
+    text-align: right;
+    margin-right: 50px;
+    
+    
+}
+
+.cadastro img {
+    max-width:500px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+}
+
