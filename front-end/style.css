@@ -6,11 +6,13 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+
+    
 }
 
 nav {
     width: 100%;
-    background: #e8c4ff;
+    background: #9F5FC4;
 }
 
 .logo {
@@ -37,16 +39,8 @@ nav a {
     border-radius: 3px;
 }
 
-.login {
-    font-size: 12px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-}
-
-a.cadastro {
-    font-size: 12px;
-    border: 1px solid #fff;
-    border-radius: 3px;
+.example {
+    margin-right: 120px;
 }
 
 a:hover{
@@ -92,8 +86,20 @@ h2 {
     text-align: center;
 }
 
-h3 {
+#titulo {
     margin-top: 10px;
+}
+
+#hometitulo {
+    color:#f1f1f1;
+    text-align: center;
+}
+
+#hometexto {
+    text-align: center;
+    padding: 50px 80px 50px 80px;
+    font-size: 20px;
+    color:#f1f1f1;
 }
 
 .disabled {
@@ -109,6 +115,12 @@ h3 {
     color:#f1f1f1;
     padding: 1px 1px;
   }
+  
+  a.cadastro {
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
 
 .login-form {
     width: 100%;
@@ -158,7 +170,7 @@ input[type="submit"]:hover {
 
 .faixa {
 
-    background-color: #8f5fc0;
+    background-color: #9F5FC4;
     width: 100%;
     height: 300px;
 }
@@ -302,3 +314,14 @@ footer {
     background-color: #8f5fc0;
     border-radius: 5px;
 }
+
+
+.newnav {
+position: absolute;
+width: 100%;
+height: 574px;
+left: -2px;
+top: -9px;
+background: #9F5FC4;
+}
+
