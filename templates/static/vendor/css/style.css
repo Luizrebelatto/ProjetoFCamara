@@ -1,196 +1,371 @@
-:root {
-  --custom-color-1: #e8c4ff;
-  --custom-color-2: #af7ecb;
-  --custom-color-3: #a060c4;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-	font-family: 'Varela Round', sans-serif;
-}
-
-/*/ Start Navbar /*/
-.form-control {
-	box-shadow: none;
-	font-weight: normal;
-	font-size: 13px;
-}
-.navbar {
-	background: #e8c4ff;
-	padding-left: 16px;
-	padding-right: 16px;
-	border-bottom: 1px solid #dfe3e8;
-	border-radius: 0;
-}
-
-.navbar .bg-custom {
-    background: #e8c4ff;
-}
-
-.nav-link img {
-	border-radius: 50%;
-	width: 36px;
-	height: 36px;
-	margin: -8px 0;
-	float: left;
-	margin-right: 10px;
-}
-.navbar .navbar-brand {
-	padding-left: 0;
-	font-size: 20px;
-	padding-right: 50px;
-}
-.navbar .navbar-brand b {
-	color: #af7ecb;
-}
-.navbar .form-inline {
-	display: inline-block;
-}
-.navbar a {
-	color: #888;
-	font-size: 20px;
-}
-.navbar .sign-up-btn {
-	min-width: 110px;
-	max-height: 36px;
-}
-.navbar .dropdown-menu {
-	color: #999;
-	font-weight: normal;
-	border-radius: 1px;
-	border-color: #e5e5e5;
-	box-shadow: 0 2px 8px rgba(0,0,0,.05);
-}
-.navbar a {
-	color: #888;
-	padding: 8px 20px;
-	background: transparent;
-	line-height: normal;
-    font-size: 18px;
-}
-.navbar .navbar-form {
-	border: none;
-}
-.navbar .action-form {
-	width: 280px;
-	padding: 20px;
-	left: auto;
-	right: 0;
-	font-size: 14px;
-}
-.navbar .action-form a {
-	color: #af7ecb;
-	padding: 0 !important;
-	font-size: 14px;
-}
-.navbar .action-form .hint-text {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 13px;
-}
-.navbar .btn-primary, .navbar .btn-primary:active {
-	color: #fff;
-	background: #af7ecb !important;
-	border: none;
-}
-.navbar .btn-primary:hover, .navbar .btn-primary:focus {
-	color: #fff;
-	background:#a060c4 !important;
-}
-
-.navbar .action-buttons .dropdown-toggle::after {
-	display: none;
-}
-.form-check-label input {
-	position: relative;
-	top: 1px;
-}
-@media (min-width: 1200px){
-	.form-inline .input-group {
-		width: 300px;
-		margin-left: 30px;
-	}
-}
-@media (max-width: 768px){
-	.navbar .dropdown-menu.action-form {
-		width: 100%;
-		padding: 10px 15px;
-		background: transparent;
-		border: none;
-	}
-	.navbar .form-inline {
-		display: block;
-	}
-	.navbar .input-group {
-		width: 100%;
-	}
-}
-/*/ End Navbar /*/
-
-
-/*/ Start Login-Form /*/
-.login-container{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.login-logo{
-    position: relative;
-    margin-left: -41.5%;
-}
-.login-logo img{
-    position: absolute;
-    width: 20%;
-    margin-top: 19%;
-    background: #e8c4ff;
-    border-radius: 4.5rem;
-    padding: 5%;
-}
-.login-form-1{
-    padding: 9%;
-    background:#a060c4;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-}
-.login-form-1 h3{
-    text-align: center;
-    margin-bottom:12%;
-    color:#fff;
-}
-.login-form-2{
-    padding: 9%;
-    background: #af7ecb;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-}
-.login-form-2 h3{
-    text-align: center;
-    margin-bottom:12%;
-    color: #fff;
-}
-.form-group .btn-primary, .form-group .btn-primary:active {
-	color: #fff;
-	background: #a6c8f5 !important;
-	border: none;
-}
-.form-group .btn-primary:hover, .form-group .btn-primary:focus {
-	color: #fff;
-	background:#e8c4ffe0 !important;
-}
-.btnForgetPwd{
-    color: #fff;
-    font-weight: 600;
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-}
-.btnForgetPwd:hover{
-    text-decoration:none;
-    color:#fff;
+    list-style: none;
+
+    
 }
 
-/*/ end Login-Form /*/
-
-/*/ Footer /*/
-.footer {
-    position: absolute;
-    bottom: 0;
+nav {
     width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #e8c4ff;
+    background: #9F5FC4;
 }
+
+.logo {
+    width: 200px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 10px;
+}
+ 
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px; 
+}
+
+
+.example {
+    margin-right: 120px;
+}
+
+a:hover{
+    color: rgb(134, 9, 172);
+    text-decoration: underline;
+}
+
+
+
+nav #icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.fotohome {
+    height: 400px;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+#justificado{
+    text-align: justify;
+    padding: 10px 30px 30px 10px;
+}
+
+.container {
+    margin-top:30px;
+    width: 100%;
+}
+
+.row {
+    margin-top: 80px;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#titulo {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#hometitulo {
+    color:#f1f1f1;
+    text-align: center;
+}
+
+#hometexto {
+    text-align: center;
+    padding: 50px 80px 50px 80px;
+    font-size: 20px;
+    color:#f1f1f1;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #8f5fc0;
+    color:#f1f1f1;
+    padding: 1px 1px;
+  }
+
+  .btn {
+    color:#f1f1f1;
+    padding: 1px 1px;
+  }
+  
+  a.cadastro {
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.login-form {
+    width: 100%;
+    background: #e3d1ee;
+    right: 140px;
+    border-radius: 3px;
+    border-bottom: 5px solid #8f5fc0;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+.login-form>form {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 16px;
+
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 220px;
+    height: 30px;
+    border: 1px solid #8f5fc0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+    background: white;
+    font-weight: bold;
+    color: black;
+    border: 0px;
+    border-radius: 3px;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #8f5fc0
+}
+
+.faixa {
+
+    background-color: #9F5FC4;
+    width: 100%;
+    height: 300px;
+}
+
+.boasvindas {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.profilepicture {
+    width: 100px;
+}
+
+#meuperfil {
+    color: #9F5FC4;
+    text-align: left;
+    padding: 30px 30px;
+}
+
+.retangulo {
+
+    margin: 0 auto;
+    width: 80%;
+    height: 814px;
+    background: #FFFFFF;
+    box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subtitulo {
+    margin-left: 20px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 60px;
+    display: flex;
+    color: black;
+}
+
+#lista {
+    margin-left: 20px;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    color: black;
+}
+
+#lista:hover {
+    color: rgb(134, 9, 172);
+    text-decoration: underline;
+
+}
+
+#legenda {
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    background: #f1f1f1;
+    padding: 90px 0;
+    height: 10em;
+    position: relative;
+}
+
+.footer-container {
+
+    max-width: 1300px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%)
+}
+
+.logo-educadoefooter {
+    width: 180px;
+}
+
+.social-media {
+    margin: 20px 20px;
+    
+}
+
+.social-media {
+    color: #8f5fc0;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+
+}
+
+.doador h2 {
+    text-align: left;
+    position: absolute;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    
+}
+
+.donatario h2 {
+    text-align: right;
+    margin-right: 50px;
+    
+    
+}
+
+.cadastro img {
+    max-width:500px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+}
+
+
+.pedidos {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.ola {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.acompanhe {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.faixa1 {
+
+    background-color: #8f5fc0;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    
+    
+}
+
+.faixa2 {
+
+    background-color: #8f5fc0;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    border-radius: 5px;
+       
+}
+
+
+.foto {
+    width: 100px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.usuario1 h3 {
+    text-align: left;
+}
+
+.btn-pedidos {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.btn-alterar {
+    background-color: #8f5fc0;
+    border-radius: 5px;
+}
+
+
+.newnav {
+position: absolute;
+width: 100%;
+height: 574px;
+left: -2px;
+top: -9px;
+background: #9F5FC4;
+}
+

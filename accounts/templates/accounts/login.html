@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<section id="section-login">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mx-auto">
+                <form method="post">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4">Entrar</legend>
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Entrar</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="border-top pt-3">
+                    <small class="texte-muted">
+                        Ainda não tem uma Conta?<a class="ml-2" href="{% url 'register' %}">Registre-se</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

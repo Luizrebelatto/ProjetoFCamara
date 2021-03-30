@@ -26,6 +26,8 @@ SECRET_KEY = 'n1-aarb$8fo65f)t)oy$8pgzeajpo1-ohm1f1soai@v5!^w$q6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
 ALLOWED_HOSTS = []
 
 
@@ -33,6 +35,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'core',
+    'accounts',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap_datepicker_plus',
 ]
 
 MIDDLEWARE = [
