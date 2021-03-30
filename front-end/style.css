@@ -12,7 +12,7 @@
 
 nav {
     width: 100%;
-    background: #9F5FC4;
+    background: #7173AB;
 }
 
 .logo {
@@ -219,6 +219,7 @@ input[type="submit"]:hover {
     font-style: normal;
     font-size: 20px;
     line-height: 60px;
+    font-weight: bold;
     display: flex;
     color: black;
 }
@@ -380,3 +381,7 @@ top: -9px;
 background: #9F5FC4;
 }
 
+#icons{
+    display: flex;
+    flex-direction: row;
+}
