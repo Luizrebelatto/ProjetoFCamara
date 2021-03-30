@@ -34,7 +34,7 @@ nav a {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
-    border: 1px solidansparent;
+    border: 1px solid transparent;
     padding: 7px 10px;
     border-radius: 3px; 
 }
