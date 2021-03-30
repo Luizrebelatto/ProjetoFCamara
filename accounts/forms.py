@@ -20,7 +20,29 @@ class CustomUserCreateForm(UserCreationForm, forms.ModelForm):
         user = super().save(commit=False)
         user.set_password(self.cleaned_data['password1'])
         user.username = self.cleaned_data['email']
-        user.is_cliente = True
+        user.is_donor = False
+
+        if commit:
+            user.save()
+        return user
+
+
+class CustomDonorCreateForm(UserCreationForm, forms.ModelForm):
+
+    class Meta:
+        model = CustomUser
+        fields = [
+            'email',
+            'first_name',
+            'last_name',
+        ]
+        labels = {'username': 'Usuário'}
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.set_password(self.cleaned_data['password1'])
+        user.username = self.cleaned_data['email']
+        user.is_donor = True
 
         if commit:
             user.save()
@@ -38,4 +60,4 @@ class ProfileChangeForm(forms.ModelForm):
 
     class Meta:
         model = Profile
-        fields = ['fone', 'adress', 'adress_number', 'city', 'uf', 'imagem']
+        fields = ['fone', 'cpf', 'adress', 'adress_number', 'city', 'uf', 'imagem']

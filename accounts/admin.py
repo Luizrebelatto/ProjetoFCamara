@@ -19,15 +19,15 @@ class CustomUserAdmin(UserCustomAdmin):
     add_form = CustomUserCreateForm
     form = CustomUserChangeForm
     model = CustomUser
-    list_display = ('username', 'first_name', 'last_name', 'email', 'is_staff')
+    list_display = ('username', 'first_name', 'last_name', 'email', 'is_staff', 'is_donor')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
         ('Informações Pessoais', {'fields': ('first_name', 'last_name')}),
-        ('Permissões', {'fields': ('is_active', 'is_staff', 'is_superuser', 'user_permissions')}),
+        ('Permissões', {'fields': ('is_donor', 'is_active', 'is_staff', 'is_superuser', 'user_permissions')}),
         ('Datas Importantes', {'fields': ('last_login', 'date_joined')})
     )
 
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('user',)
+    list_display = ('user', )

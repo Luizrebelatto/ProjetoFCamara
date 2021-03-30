@@ -57,6 +57,7 @@ class CustomUser(AbstractUser):
     first_name = models.CharField('Nome', max_length=50)
     last_name = models.CharField('Sobrenome', max_length=50)
     is_staff = models.BooleanField('Membro da Equipe', default=False)
+    is_donor = models.BooleanField('Doador', default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
@@ -80,6 +81,7 @@ class CustomUser(AbstractUser):
 
 class Profile(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
+    cpf = models.CharField('CPF', max_length=15)
     fone = models.CharField('Telefone', max_length=15)
     adress = models.CharField(max_length=50, verbose_name='Endereço')
     adress_number = models.CharField(max_length=6, verbose_name='Numero')
@@ -120,7 +122,10 @@ class Profile(models.Model):
     )
     imagem = StdImageField(upload_to=get_file_path, blank=True, verbose_name='Imagem',
                            variations={'thumb': {'width': 150, 'height': 150, 'crop': True}}, delete_orphans=True)
-    is_donor = models.BooleanField('Doador', default=False)
 
     def __str__(self):
-        return f'{self.user.email} Profile'
+        return f'{self.user.email} Profile.'
+
+    class Meta:
+        verbose_name = 'Perfil'
+        verbose_name_plural = 'Perfis'
