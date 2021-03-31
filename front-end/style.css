@@ -47,7 +47,7 @@ nav a {
 }
 
 a:hover{
-    color: #7173AB;
+    color: #9E9FC9;
     text-decoration: underline;
 }
 
@@ -115,14 +115,6 @@ h2 {
     letter-spacing: 0.2px;
     color: white;
 }
-
-.disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    background-color: #7173AB;
-    color:#f1f1f1;
-    padding: 1px 1px;
-  }
 
   .btn {
     color:#f1f1f1;
