@@ -8,6 +8,10 @@
     list-style: none;    
 }
 
+body {
+    background-color: #F3F3F3;
+}
+
 nav {
     width: 100%;
     background: #7173AB;
@@ -252,37 +256,26 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background: #f1f1f1;
-    padding: 90px 0;
-    height: 10em;
-    position: relative;
+    background: #FFFFFF;
+    margin-top: 10px;
 }
 
 .footer-container {
-
-    max-width: 1300px;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    margin-top: 10px;
-    transform: translate(-50%, -50%)
+    padding: 0.7% 2% 5% 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .logo-educadoefooter {
-    width: 180px;
+    width: 30%;
+    float: left;
 }
 
 .social-media {
-    margin: 20px 20px;
-    margin: 0 auto;
+    width: 30%;
     color: #7173AB;
-    margin-right: 25px;
-    font-size: 22px;
-    text-decoration: none;
-    transition: .3s linear;
+    font-size: 27px;
+    float: right;
 
 }
 
