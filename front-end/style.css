@@ -5,9 +5,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
-
-    
+    list-style: none;    
 }
 
 nav {
@@ -97,11 +95,21 @@ h2 {
     text-align: center;
 }
 
+.iconindex {
+    width: 80%;
+}
+
 #hometexto {
     text-align: center;
-    padding: 50px 80px 50px 80px;
-    font-size: 20px;
-    color:#f1f1f1;
+    position: absolute;
+    font-size: 16px;
+    left: 35%;
+    right: 35%;
+    top: 25%;
+    bottom: 50%;
+    display: flex;
+    letter-spacing: 0.2px;
+    color: white;
 }
 
 .disabled {
@@ -366,6 +374,11 @@ footer {
 .btn-alterar {
     background-color: #7173AB;
     border-radius: 5px;
+    padding: 7px 7px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 
