@@ -394,6 +394,11 @@ background: #7173AB;
 #icons{
     display: flex;
     flex-direction: row;
+    font-size:20px; 
+    color:#7173AB;
+    margin-top: 20px;
+    margin-left: 5px;
+
 }
 #tituloDoacao{
     margin-top: 10px;

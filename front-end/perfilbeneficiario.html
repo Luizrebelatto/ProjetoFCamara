@@ -78,7 +78,11 @@
 
 <div class="retangulo">
 
-    <img src="../front-end/img/profilepicture.png" alt="" class="profilepicture">
+    <div id="perfilUser">
+        <svg width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="49.5" cy="49.5" r="49.5" fill="#C1C7CD" />
+        </svg>
+    </div>
     
     <p id="legenda">Adicionar imagem</p>
 
@@ -87,7 +91,13 @@
         <div class="row">
     
             <div class="col-sm-6">
-                <h3 class="subtitulo">Dados Cadastrais</h3>
+
+               <div id="icons">
+                        <h3 class="subtitulo">Dados Cadastrais</h3>
+
+                        <i class="far fa-user" id="icons"></i>
+
+                    </div>
                 
                 <ul>
                 <li>
@@ -108,10 +118,19 @@
     
                <div class="col-sm-6"> 
 
-               
-                    <a class="subtitulo" href="#">Cadastrar listas</a> 
-                    <a class="subtitulo" href="#">Minhas solicitações</a>
-                    
+                <div id="icons">
+                    <a class="subtitulo" href="#">Cadastrar listas </a> 
+
+                    <i class="far fa-file-alt" id="icons"></i>
+                        
+                    </div>
+
+                    <div id="icons">
+                        <a class="subtitulo" href="#">Minhas solicitações</a>
+    
+                        <i class="fas fa-box-open" id="icons"></i>
+                            
+                        </div>                                      
 
                 </div>
     
