@@ -395,3 +395,61 @@ background: #7173AB;
     display: flex;
     flex-direction: row;
 }
+#tituloDoacao{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight:600;
+}
+
+#description {
+    text-align: center;
+    margin: 0 auto;
+    font-weight:bolder;
+    padding-top: 20px;
+}
+
+.contentLocal{
+    margin-top: 80px;
+}
+
+#estados{
+    border: 1px solid #E9E9E9;
+    background: #f3f3f3;
+    width: 321px;
+    height: 44px;
+}
+#bairros{
+    border: 1px solid #E9E9E9;
+    background: #f3f3f3;
+    width: 230px;
+    height: 44px;
+}
+#municipios{
+    border: 1px solid #E9E9E9;
+    background: #f3f3f3;
+    width: 230px;
+    height: 44px;
+}
+
+#buttonForm{
+    width:151px;
+    height: 45px;
+    background: #77A584;
+    color: white;
+    margin-left: 50%;
+}
+#containerContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+.retanguloForm {
+
+    margin: 0 auto;
+    width: 80%;
+    height: 814px;
+    background: #FFFFFF;
+    box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+    border-radius: 10px;
+    
+}
