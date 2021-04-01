@@ -34,7 +34,7 @@ nav li {
 
 nav a {
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 7px 10px;
@@ -124,10 +124,11 @@ h2 {
   .btn {
     color:#f1f1f1;
     padding: 1px 1px;
+    font-size: 13px;
   }
   
    
-  #cadastro {
+  .cadastro {
     background: #9E9FC9;
     border: 1px solid #B4B5DB;
     border-radius: 5px;
