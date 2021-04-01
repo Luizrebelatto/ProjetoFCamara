@@ -3,7 +3,7 @@
 
 {% block content %}
 <section id="section-profile">
-    <div class="container>
+    <div class="container">
         <div class="row">
             <div class="col">
                 <legend class="border-bottom mb-4">
@@ -23,12 +23,14 @@
                 <br><br>
                 <h4>#{{ user.id }}</h4>
                 <h4>{{ user.get_full_name }}</h4>
+                <h4>{{ user.born }}</h4>
                 <h4>{{ user.email }} </h4>
-                <h4></h4>
+                <h4>{{ user.city }}, {{ user.uf }} </h4>
                 <br>
+                <a class="btn btn-primary" href="{% url 'profile-update' user.id %}">Editar</a>
+                <button type="button" class="btn btn-danger">Resetar Senha</button>
             </div>
         </div>
     </div>
-
 </section>
 {% endblock %}

@@ -5,31 +5,27 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
+    list-style: none;    
+}
 
-    
+body {
+    background-color: #F3F3F3;
 }
 
 nav {
     width: 100%;
-    background: #9F5FC4;
+    background: #7173AB;
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
 }
 
-nav ul {
-    float: right;
-    margin-right: 10px;
-}
- 
 nav li {
     display: inline-block;
     margin: 0 8px;
     line-height: 80px;
 }
-
 nav a {
     color: #fff;
     font-size: 15px;
@@ -39,13 +35,12 @@ nav a {
     border-radius: 3px; 
 }
 
-
 .example {
-    margin-right: 120px;
+    margin-right: 150px;
 }
 
 a:hover{
-    color: rgb(134, 9, 172);
+    color: #9E9FC9;
     text-decoration: underline;
 }
 
@@ -95,40 +90,53 @@ h2 {
 #hometitulo {
     color:#f1f1f1;
     text-align: center;
+    font-weight: bolder;
+}
+
+.iconindex {
+    width: 80%;
+}
+
+.search {
+    
+    width: 75%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 5.2% auto;
 }
 
 #hometexto {
     text-align: center;
-    padding: 50px 80px 50px 80px;
-    font-size: 20px;
-    color:#f1f1f1;
+    font-size: 16px;
+    padding: 3% 22% 1% 22%;
+    letter-spacing: 0.2px;
+    color: white;
 }
-
-.disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    background-color: #8f5fc0;
-    color:#f1f1f1;
-    padding: 1px 1px;
-  }
 
   .btn {
     color:#f1f1f1;
     padding: 1px 1px;
   }
   
-  a.cadastro {
-    font-size: 12px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-}
+   
+  #cadastro {
+    background: #9E9FC9;
+    border: 1px solid #B4B5DB;
+    border-radius: 5px;
+    font-size: 12px; 
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+} 
 
 .login-form {
     width: 100%;
     background: #e3d1ee;
     right: 140px;
     border-radius: 3px;
-    border-bottom: 5px solid #8f5fc0;
+    border-bottom: 5px solid #7173AB;
     align-items: center;
     margin-bottom: 15px;
 
@@ -166,14 +174,14 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: #8f5fc0
+    background: #7173AB;
 }
 
 .faixa {
 
-    background-color: #9F5FC4;
+    background-color: #7173AB;
     width: 100%;
-    height: 300px;
+    height: 330px;
 }
 
 .boasvindas {
@@ -187,7 +195,7 @@ input[type="submit"]:hover {
 }
 
 #meuperfil {
-    color: #9F5FC4;
+    color: #7173AB;
     text-align: left;
     padding: 30px 30px;
 }
@@ -203,11 +211,23 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
+.retangulo1 {
+
+    margin: 0 auto;
+    width: 80%;
+    height: 304px;
+    background: #FFFFFF;
+    box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+    border-radius: 10px;
+    text-align: center;
+}
+
 .subtitulo {
     margin-left: 20px;
     font-style: normal;
     font-size: 20px;
     line-height: 60px;
+    font-weight: bold;
     display: flex;
     color: black;
 }
@@ -221,7 +241,7 @@ input[type="submit"]:hover {
 }
 
 #lista:hover {
-    color: rgb(134, 9, 172);
+    color: #7173AB;
     text-decoration: underline;
 
 }
@@ -232,40 +252,26 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background: #f1f1f1;
-    padding: 90px 0;
-    height: 10em;
-    position: relative;
+    background: #FFFFFF;
+    margin-top: 10px;
 }
 
 .footer-container {
-
-    max-width: 1300px;
-    display: block;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    margin-top: 10px;
-    transform: translate(-50%, -50%)
+    padding: 0.7% 2% 5% 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .logo-educadoefooter {
-    width: 180px;
+    width: 30%;
+    float: left;
 }
 
 .social-media {
-    margin: 20px 20px;
-    
-}
-
-.social-media {
-    color: #8f5fc0;
-    margin-right: 25px;
-    font-size: 22px;
-    text-decoration: none;
-    transition: .3s linear;
+    width: 30%;
+    color: #7173AB;
+    font-size: 27px;
+    float: right;
 
 }
 
@@ -285,17 +291,6 @@ footer {
     
     
 }
-
-.cadastro img {
-    max-width:500px;
-    max-height:350px;
-    width: auto;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: 350px;
-}
-
 
 .pedidos {
     text-align: center;
@@ -317,7 +312,7 @@ footer {
 
 .faixa1 {
 
-    background-color: #8f5fc0;
+    
     width: 100%;
     height: 300px;
     border-radius: 5px;
@@ -327,7 +322,7 @@ footer {
 
 .faixa2 {
 
-    background-color: #8f5fc0;
+    
     width: 100%;
     height: 300px;
     margin-top: 40px;
@@ -349,14 +344,19 @@ footer {
     text-align: left;
 }
 
-.btn-pedidos {
+.btn-vermais {
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
 .btn-alterar {
-    background-color: #8f5fc0;
+    background-color: #7173AB;
     border-radius: 5px;
+    padding: 7px 7px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 
@@ -366,6 +366,75 @@ width: 100%;
 height: 574px;
 left: -2px;
 top: -9px;
-background: #9F5FC4;
+background: #7173AB;
 }
 
+#icons{
+    display: flex;
+    flex-direction: row;
+    font-size:20px; 
+    color:#7173AB;
+    margin-top: 20px;
+    margin-left: 5px;
+
+}
+#tituloDoacao{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight:600;
+}
+
+#description {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.contentLocal{
+    margin-top: 80px;
+    
+}
+
+#estados{
+    border: 1px solid #E9E9E9;
+    background: #f3f3f3;
+    width: 321px;
+    height: 44px;
+}
+#bairros{
+    border: 1px solid #E9E9E9;
+    background: #f3f3f3;
+    width: 230px;
+    height: 44px;
+}
+#municipios{
+    border: 1px solid #E9E9E9;
+    background: #f3f3f3;
+    width: 230px;
+    height: 44px;
+}
+
+#buttonForm{
+    width:151px;
+    height: 45px;
+    background: #77A584;
+    color: white;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+#containerContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+.retanguloForm {
+
+    margin: 0 auto;
+    width: 80%;
+    height: 814px;
+    background: #FFFFFF;
+    box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+    border-radius: 10px;
+    
+}

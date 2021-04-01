@@ -5,8 +5,6 @@ from accounts.models import CustomUser
 
 # Create your models here.
 
-# Create your models here.
-
 
 class Base(models.Model):
     created_at = models.DateTimeField(default=timezone.now, verbose_name='Criado em')
