@@ -11,7 +11,7 @@
                 </legend>
                 {% if messages %}
                 {% for message in messages %}
-                <div class="alert alert-{{ message.tags }}">
+                <div class="alert {{ message.tags }}">
                     {{ message }}
                 </div>
                 {% endfor %}
@@ -26,6 +26,12 @@
                 <h4>{{ user.born }}</h4>
                 <h4>{{ user.email }} </h4>
                 <h4>{{ user.city }}, {{ user.uf }} </h4>
+                {% if user.is_donor %}
+                <h4>DOADOR</h4>
+                <h1>QUALQUER COISA</h1>
+                {% else %}
+                <h4>DONATARIO</h4>
+                {% endif %}
                 <br>
                 <a class="btn btn-primary" href="{% url 'profile-update' user.id %}">Editar</a>
                 <button type="button" class="btn btn-danger">Resetar Senha</button>
