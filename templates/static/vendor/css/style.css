@@ -26,14 +26,16 @@ nav li {
     margin: 0 8px;
     line-height: 80px;
 }
+
 nav a {
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 7px 10px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
+
 
 .example {
     margin-right: 150px;
@@ -98,7 +100,7 @@ h2 {
 }
 
 .search {
-    
+
     width: 75%;
     background: #FFFFFF;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
@@ -117,19 +119,20 @@ h2 {
   .btn {
     color:#f1f1f1;
     padding: 1px 1px;
+    font-size: 13px;
   }
-  
-   
-  #cadastro {
+
+
+  .cadastro {
     background: #9E9FC9;
     border: 1px solid #B4B5DB;
     border-radius: 5px;
-    font-size: 12px; 
+    font-size: 12px;
     color: white;
     margin-bottom: 10px;
     margin-left: 5px;
 
-} 
+}
 
 .login-form {
     width: 100%;
@@ -281,15 +284,15 @@ footer {
     text-align: center;
     margin-left: 50px;
     margin-top: 50px;
-    
-    
+
+
 }
 
 .donatario h2 {
     text-align: right;
     margin-right: 50px;
-    
-    
+
+
 }
 
 .pedidos {
@@ -312,22 +315,22 @@ footer {
 
 .faixa1 {
 
-    
+
     width: 100%;
     height: 300px;
     border-radius: 5px;
-    
-    
+
+
 }
 
 .faixa2 {
 
-    
+
     width: 100%;
     height: 300px;
     margin-top: 40px;
     border-radius: 5px;
-       
+
 }
 
 
@@ -337,7 +340,7 @@ footer {
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .usuario1 h3 {
@@ -359,20 +362,10 @@ footer {
     margin-left: 5px;
 }
 
-
-.newnav {
-position: absolute;
-width: 100%;
-height: 574px;
-left: -2px;
-top: -9px;
-background: #7173AB;
-}
-
 #icons{
     display: flex;
     flex-direction: row;
-    font-size:20px; 
+    font-size:20px;
     color:#7173AB;
     margin-top: 20px;
     margin-left: 5px;
@@ -393,7 +386,7 @@ background: #7173AB;
 
 .contentLocal{
     margin-top: 80px;
-    
+
 }
 
 #estados{
@@ -426,7 +419,7 @@ background: #7173AB;
 #containerContent{
     display: flex;
     flex-direction: column;
-    
+
 }
 .retanguloForm {
 
@@ -436,5 +429,138 @@ background: #7173AB;
     background: #FFFFFF;
     box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
     border-radius: 10px;
-    
+
+}
+
+#titulodoacao{
+    margin-top: 10px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight:bold;
+}
+
+#legendadoacao {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#list {
+    margin-left: 20px;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    color: black;
+}
+
+#list-content{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
+    text-align: left;
+    color: #373F41;
+
+}
+
+#titulo-lista{
+    height: 48px;
+    width: 679px;
+    left: 368px;
+    top: 674px;
+    border-radius: 0px;
+    background: #7173AB;
+    margin-bottom: 5px;
+}
+
+#list-titulo{
+    color: #fff;
+    padding-top:10px;
+    padding-left: 1px;
+    text-align: left;
+}
+
+#listBold{
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    color: #373F41;
+}
+
+#listBold2{
+    margin-left: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    color: #373F41;
+}
+
+#iconList{
+    display: flex;
+    flex-direction: row;
+    font-size:20px;
+    color:#7173AB;
+    margin-top: 20px;
+    margin:1px;
+    padding-right: 6px;
+}
+
+#listaContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+}
+
+#buttonDoacao{
+    width:160px;
+    height: 45px;
+    background: #77A584;
+    color: white;
+    margin-left: 45%;
+    margin-top: 10%;
+    border:1px solid #77a584;
+    border-radius: 7px;
+
+    margin-top: 120px;
+}
+
+#buttonBuscar{
+    width:160px;
+    height: 45px;
+    background: #77A584;
+    color: white;
+    margin-left: 45%;
+    margin-top: 10%;
+    border:1px solid #77a584;
+    border-radius: 7px;
+
+    margin-top: 120px;
+}
+
+#listaForms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.avatar-img {
+  border-radius: 50%;
 }

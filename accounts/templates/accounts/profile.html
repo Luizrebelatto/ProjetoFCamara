@@ -3,40 +3,64 @@
 
 {% block content %}
 <section id="section-profile">
+    <div>
+        <h3 id="meuperfil">Meu Perfil :)</h3>
+    </div>
+    <div class="boasvindas">
+        <h3 id="titulo">Olá, {{ user.first_name }}, aqui é seu perfil, fique a vontade!</h3>
+    </div>
+    <div class="retangulo">
+    <div class="p-3" id="perfilUser">
+        <img class="avatar-img" src="{{ user.profile.imagem.thumb.url }}" alt="Avatar" width="110" height="110">
+    </div>
+        <a href="{% url 'profile-update' user.id %}"><p id="legenda">Adicionar imagem</p></a>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <legend class="border-bottom mb-4">
-                    <h2>Informações Pessoais.</h2>
-                </legend>
-                {% if messages %}
-                {% for message in messages %}
-                <div class="alert {{ message.tags }}">
-                    {{ message }}
+            <div class="col-sm-6">
+               <div id="icons">
+                        <h3 class="subtitulo">Dados Cadastrais</h3>
+                        <i class="far fa-user" id="icons"></i>
+               </div>
+                <ul>
+                <li>
+                    <a id="lista" href="{% url 'profile-update' user.id %}">Alterar endereço de e-mail</a>
+                </li>
+                <li>
+                    <a id="lista" href="#">Alterar senha de acesso</a>
+                </li>
+                <li>
+                    <a id="lista" href="{% url 'profile-update' user.id %}">Alterar seu endereço</a>
+                </li>
+                <li>
+                    <a id="lista" href="#">Alterar dados dos seus dependentes</a>
+                </li>
+                </ul>
+            </div>
+            {% if user.is_donor %}
+             <div class="col-sm-6">
+                    <div id="icons">
+                        <a class="subtitulo" href="#">Minhas doações</a>
+                        <i class="fa fa-hand-holding-heart" id="icons"></i>
+                    </div>
+                    <div id="icons">
+                        <a class="subtitulo" href="#">Ver doações disponíveis</a>
+                        <i class="fa fa-box" id="icons"></i>
+                    </div>
                 </div>
-                {% endfor %}
-                {% endif %}
-            </div>
-            <br>
-            <div class="col-12">
-                <img src="{{ user.profile.imagem.thumb.url }}" alt="Avatar" width="150" height="150">
-                <br><br>
-                <h4>#{{ user.id }}</h4>
-                <h4>{{ user.get_full_name }}</h4>
-                <h4>{{ user.born }}</h4>
-                <h4>{{ user.email }} </h4>
-                <h4>{{ user.city }}, {{ user.uf }} </h4>
-                {% if user.is_donor %}
-                <h4>DOADOR</h4>
-                <h1>QUALQUER COISA</h1>
-                {% else %}
-                <h4>DONATARIO</h4>
-                {% endif %}
-                <br>
-                <a class="btn btn-primary" href="{% url 'profile-update' user.id %}">Editar</a>
-                <button type="button" class="btn btn-danger">Resetar Senha</button>
-            </div>
+            {% else %}
+             <div class="col-sm-6">
+                    <div id="icons">
+                        <a class="subtitulo" href="{% url 'cadastrar-lista' %}">Cadastrar listas </a>
+                        <i class="far fa-file-alt" id="icons"></i>
+                    </div>
+                    <div id="icons">
+                        <a class="subtitulo" href="#">Minhas solicitações</a>
+                        <i class="fas fa-box-open" id="icons"></i>
+                    </div>
+               </div>
+            {% endif %}
         </div>
     </div>
+</div>
 </section>
 {% endblock %}

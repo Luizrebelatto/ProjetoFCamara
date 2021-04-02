@@ -1,11 +1,14 @@
 import uuid
 from django.db import models
+from django.utils import timezone
 from datetime import date
 from stdimage.models import StdImageField
 from django.contrib.auth.models import (
     AbstractUser,
     BaseUserManager,
 )
+from materiais.models import ListaMaterial
+from pontocoleta.models import PontosColeta
 
 
 def get_file_path(_instace, filename) -> str:
@@ -17,6 +20,31 @@ def get_file_path(_instace, filename) -> str:
     ext = filename.split('.')[-1]
     file_name = f'{file_path}{uuid.uuid4()}.{ext}'
     return file_name
+
+
+class Base(models.Model):
+    created_at = models.DateTimeField(default=timezone.now, verbose_name='Criado em')
+    updated_at = models.DateTimeField(default=timezone.now, verbose_name='Atualizado em')
+    status = models.BooleanField(default=True)
+
+    class Meta:
+        abstract = True
+
+
+class Dependente(Base):
+    dependente_nome = models.CharField(max_length=50, verbose_name='Nome Completo')
+    dependente_nascimento = models.DateField(max_length=10, verbose_name='Data de Nascimento')
+    dependente_serie = models.CharField(max_length=10, verbose_name='Ciclo/Série')
+    dependente_escola = models.CharField(max_length=50, verbose_name='Escola')
+    dependente_lista = models.ForeignKey(ListaMaterial, on_delete=models.DO_NOTHING, blank=True, null=True)
+    ponto_coleta = models.ForeignKey(PontosColeta, on_delete=models.DO_NOTHING, blank=True, null=True)
+
+    def __str__(self):
+        return self.dependente_nome
+
+    class Meta:
+        verbose_name = 'Dependente'
+        verbose_name_plural = 'Dependentes'
 
 
 class UserManager(BaseUserManager):
@@ -83,7 +111,7 @@ class Profile(models.Model):
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     cpf = models.CharField('CPF', max_length=15)
     fone = models.CharField('Telefone', max_length=15)
-    adress = models.CharField(max_length=50, verbose_name='Endereço')
+    adress = models.CharField(max_length=100, verbose_name='Endereço')
     adress_number = models.CharField(max_length=6, verbose_name='Numero')
     city = models.CharField('Cidade', max_length=30)
     uf = models.CharField(
@@ -122,6 +150,7 @@ class Profile(models.Model):
     )
     imagem = StdImageField(upload_to=get_file_path, blank=True, verbose_name='Imagem',
                            variations={'thumb': {'width': 150, 'height': 150, 'crop': True}}, delete_orphans=True)
+    dependente = models.ManyToManyField(Dependente)
 
     def __str__(self):
         return f'{self.user.email} Profile.'
@@ -129,3 +158,4 @@ class Profile(models.Model):
     class Meta:
         verbose_name = 'Perfil'
         verbose_name_plural = 'Perfis'
+

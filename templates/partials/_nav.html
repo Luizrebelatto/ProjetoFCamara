@@ -25,12 +25,41 @@
             <hr>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <!-- if -->
+                {% if user.is_authenticated %}
+                <li>
+                <div class="dropdown">
+                    {% if user.is_donor %}
+                    <button type="button" class="btn" data-toggle="dropdown">Olá, {{ user.first_name }}! <i class="fas fa-angle-down"></i> </button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="{% url 'profile' %}"> Meu Perfil</a>
+                       <a class="dropdown-item"> Minhas doações</a>
+                       <a class="dropdown-item"> Doar</a>
+                       <a class="dropdown-item"> Sair</a>
+                     </div>
+                    {% else %}
+                    <button type="button" class="btn" data-toggle="dropdown">Olá, (beneficiario)! <i class="fas fa-angle-down"></i> </button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="{% url 'profile' %}"> Meu Perfil</a>
+                       <a class="dropdown-item"> Minhas listas</a>
+                       <a class="dropdown-item"> Recebidos</a>
+                       <a class="dropdown-item"> Sair</a>
+                    </div>
+                    {% endif %}
+                </div>
+                </li>
+               <li class="nav-item">
+                   <a href="#">SAIR</a>
+                </li>
+                <!-- endif -->
+                {% else %}
                 <li class="nav-item">
                     <a href="#">LOGIN</a>
                 </li>
                 <li class="nav-item">
                     <a id="cadastro" href="{% url 'donatario' %}">CADASTRE-SE</a>
                 </li>
+                {% endif %}
             </ul>
         </div>
     </nav>

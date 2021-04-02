@@ -36,6 +36,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'core',
     'accounts',
+    'pontocoleta',
+    'materiais',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
