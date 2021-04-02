@@ -108,6 +108,12 @@ h2 {
     font-size: 25px;
 }
 
+#titulowhite {
+    padding: 0.4% 1%;
+    font-size: 25px;
+    color: #f1f1f1;
+}
+
 #hometitulo {
     color:#f1f1f1;
     text-align: center;
@@ -658,15 +664,13 @@ background: #7173AB;
     background-color: #7173AB;
     width: 100%;
     height: 330px;
+    padding: 0.5% 3%;
     
-}
-
-#historia {
-    position: absolute;
 }
 
 
 #justificado1{
-    
-    margin-top: 50px;
+    color: white;
+    margin-top: 5%;
+    margin-left: 3%;
 }
