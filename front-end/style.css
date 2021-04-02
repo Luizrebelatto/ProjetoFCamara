@@ -70,7 +70,7 @@ nav #icon {
     padding: 10px 10px;
 }
 
-#justificado{
+.justificado{
     text-align: justify;
     padding: 10px 30px 30px 10px;
 }
@@ -202,10 +202,9 @@ input[type="submit"]:hover {
     width: 100px;
 }
 
-#meuperfil {
+.meuperfil {
     color: #7173AB;
     text-align: left;
-    padding: 30px 30px;
 }
 
 .retangulo {
