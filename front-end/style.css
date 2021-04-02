@@ -324,8 +324,7 @@ footer {
     width: 100%;
     height: 300px;
     border-radius: 5px;
-    
-    
+    margin-top: 40px;  
 }
 
 .faixa2 {
@@ -350,12 +349,27 @@ footer {
 
 .usuario1 h3 {
     text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.usuario1 h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #7173AB;
+}
+
+.voltar-perfil a {
+    color: #7173AB;
+    
 }
 
 .btn-vermais {
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
 
 .btn-alterar {
     background-color: #7173AB;
