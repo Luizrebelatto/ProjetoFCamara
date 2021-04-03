@@ -11,13 +11,11 @@ from django.views.generic import (
     TemplateView,
 )
 from .forms import (
-    PerfilForm,
     UserForm,
     CustomUserChangeForm,
     ProfileChangeForm
-
 )
-from .models import (CustomUser, Profile)
+from .models import CustomUser, Dependente
 
 # Create your views here.
 
@@ -76,3 +74,18 @@ class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
             return True
 
         return False
+
+
+class DependenteCreateView(CreateView):
+    model = CustomUser
+    form_class = UserForm
+    template_name = 'accounts/index.html'
+    success_url = reverse_lazy('donatario')
+
+    def form_valid(self, form):
+        messages.success(self.request, f'Conta Criada com Sucesso!!')
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Não foi possivel Criar a Conta')
+        return super(UserCreateView, self).form_invalid(form)

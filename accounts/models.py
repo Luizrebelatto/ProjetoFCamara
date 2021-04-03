@@ -7,7 +7,6 @@ from django.contrib.auth.models import (
     AbstractUser,
     BaseUserManager,
 )
-from materiais.models import ListaMaterial
 from pontocoleta.models import PontosColeta
 
 
@@ -29,22 +28,6 @@ class Base(models.Model):
 
     class Meta:
         abstract = True
-
-
-class Dependente(Base):
-    dependente_nome = models.CharField(max_length=50, verbose_name='Nome Completo')
-    dependente_nascimento = models.DateField(max_length=10, verbose_name='Data de Nascimento')
-    dependente_serie = models.CharField(max_length=10, verbose_name='Ciclo/Série')
-    dependente_escola = models.CharField(max_length=50, verbose_name='Escola')
-    dependente_lista = models.ForeignKey(ListaMaterial, on_delete=models.DO_NOTHING, blank=True, null=True)
-    ponto_coleta = models.ForeignKey(PontosColeta, on_delete=models.DO_NOTHING, blank=True, null=True)
-
-    def __str__(self):
-        return self.dependente_nome
-
-    class Meta:
-        verbose_name = 'Dependente'
-        verbose_name_plural = 'Dependentes'
 
 
 class UserManager(BaseUserManager):
@@ -84,32 +67,7 @@ class CustomUser(AbstractUser):
     email = models.EmailField('E-mail', unique=True)
     first_name = models.CharField('Nome', max_length=50)
     last_name = models.CharField('Sobrenome', max_length=50)
-    is_staff = models.BooleanField('Membro da Equipe', default=False)
-    is_donor = models.BooleanField('Doador', default=False)
-
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
-
-    class Meta:
-        verbose_name = 'Usuário'
-        verbose_name_plural = 'Usuários'
-
-    def __str__(self):
-        return self.email
-
-    objects = UserManager()
-
-    def get_full_name(self):
-        full_name = '%s %s' % (self.first_name, self.last_name)
-        return full_name.strip()
-
-    def get_short_name(self):
-        return self.first_name
-
-
-class Profile(models.Model):
-    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    cpf = models.CharField('CPF', max_length=15)
+    cpf = models.CharField('CPF', max_length=15, blank=True, null=True)
     fone = models.CharField('Telefone', max_length=15)
     adress = models.CharField(max_length=100, verbose_name='Endereço')
     adress_number = models.CharField(max_length=6, verbose_name='Numero')
@@ -148,9 +106,33 @@ class Profile(models.Model):
             ('TO', 'Tocantins'),
         )
     )
+    is_staff = models.BooleanField('Membro da Equipe', default=False)
+    is_donor = models.BooleanField('Doador', default=False)
+
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
+
+    class Meta:
+        verbose_name = 'Usuário'
+        verbose_name_plural = 'Usuários'
+
+    def __str__(self):
+        return f'{self.email}'
+
+    objects = UserManager()
+
+    def get_full_name(self):
+        full_name = '%s %s' % (self.first_name, self.last_name)
+        return full_name.strip()
+
+    def get_short_name(self):
+        return self.first_name
+
+
+class Profile(models.Model):
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     imagem = StdImageField(upload_to=get_file_path, blank=True, verbose_name='Imagem',
                            variations={'thumb': {'width': 150, 'height': 150, 'crop': True}}, delete_orphans=True)
-    dependente = models.ManyToManyField(Dependente)
 
     def __str__(self):
         return f'{self.user.email} Profile.'
@@ -158,4 +140,21 @@ class Profile(models.Model):
     class Meta:
         verbose_name = 'Perfil'
         verbose_name_plural = 'Perfis'
+
+
+class Dependente(Base):
+    dependente_nome = models.CharField(max_length=50, verbose_name='Nome Completo')
+    dependente_nascimento = models.DateField(max_length=10, verbose_name='Data de Nascimento')
+    dependente_serie = models.CharField(max_length=10, verbose_name='Ciclo/Série')
+    dependente_escola = models.CharField(max_length=50, verbose_name='Escola')
+    responsavel = models.ForeignKey(CustomUser, on_delete=models.DO_NOTHING, blank=False, null=False)
+    ponto_coleta = models.ForeignKey(PontosColeta, on_delete=models.DO_NOTHING, blank=True, null=True)
+
+    def __str__(self):
+        return self.dependente_nome
+
+    class Meta:
+        verbose_name = 'Dependente'
+        verbose_name_plural = 'Dependentes'
+
 
