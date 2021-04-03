@@ -277,8 +277,6 @@ h2 {
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 .retangulo2 {
     margin: 0 auto;
     width: 90%;
@@ -288,7 +286,6 @@ h2 {
     border-radius: 10px;
     padding: 5% 5%;
 }
->>>>>>> 7b6a01dec6ea9a19e7794f953626ba0388ed565c
 
 .subtitulo {
     font-style: normal;
@@ -677,7 +674,6 @@ background: #7173AB;
     margin-top: 100px;
 }
 
-<<<<<<< HEAD
 .tituloMateriais{
     margin-top: 10px;
     text-align: left;
@@ -764,7 +760,7 @@ select.escola{
     background: #f3f3f3;
     width: 230px;
     height: 44px;
-=======
+}
 
 
 #localizacao {
@@ -787,5 +783,4 @@ select.escola{
     color: white;
     margin-top: 5%;
     margin-left: 3%;
->>>>>>> 7b6a01dec6ea9a19e7794f953626ba0388ed565c
 }
