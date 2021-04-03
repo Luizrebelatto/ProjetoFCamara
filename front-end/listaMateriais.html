@@ -42,29 +42,7 @@
         th,
         tfoot {
 
-            padding: 20px;
-        }
-
-
-
-        caption {
-            font-size: x-large;
-        }
-
-        colgroup {
-            background: #F60;
-        }
-
-        .coluna1 {
-            background: #F66;
-        }
-
-        .coluna2 {
-            background: #F33;
-        }
-
-        .coluna3 {
-            background: #F99;
+            padding: 5px;
         }
     </style>
 
@@ -124,201 +102,276 @@
 
     <div class="boasvindas">
 
-        <h3 id="titulodoacao">Faça a sua doação.</h3>
+        <!--Fluxo Doador<h3 id="titulodoacao">Faça a sua doação.</h3>-->
+        <h3 id="titulodoacao">Cadastre a Lista de Materiais.</h3>
 
 
 
     </div>
 
-    <div class="retanguloLista">
+    <div class="retanguloForm">
 
 
-        <div class="tituloMateriais">
+        <!--Fluxo Doador<div class="tituloMateriais">
             <h3>Doação para:</h3>
             <p>Usuário 1</p>
             <p>Escola Municipal Dr.Leandro Franchechini</p>
-        </div>
+        </div>-->
+        <div>
+            <form action="">
+                <div class="containerContentMaterial">
 
-        <div class="container">
+                    <div style="display: flex;flex-direction: row;">
+                        <div>
+                            <label for="aluno" id="titulo_label">Nome do Aluno:</label>
+                            <br>
+                            <select name="aluno" class="aluno">
+                                <option value="teste1">teste 1</option>
+                                <option value="teste2">teste 2</option>
+                                <option value="teste3">teste 3</option>
+                                <option value="teste4">teste 4</option>
+                                <option value="teste5">teste 5</option>
 
-            <div class="row">
+                            </select>
+                        </div>
+                        <div>
+                            <label for="ponto" id="titulo_label">Ponto de coleta próximo ao seu endereço:</label>
+                            <br>
+                            <select name="ponto" class="ponto">
+                                <option value="teste1">teste 1</option>
+                                <option value="teste2">teste 2</option>
+                                <option value="teste3">teste 3</option>
+                                <option value="teste4">teste 4</option>
+                                <option value="teste5">teste 5</option>
 
-                <!--<div class="col-sm-6">-->
-
-
-                <table style="margin-left: 100px;">
-
-                    <thead>
-
-                        <tr>
-                            <th colspan="4" id="tituloLista">Lista de itens necessários:</th>
-                        </tr>
-
-                    </thead>
-
-
-
-                    <tbody>
-
-                        <tr>
-                            <td>Lapís</td>
-
-                            <th>Quantidade: 2</th>
-                        </tr>
-
-                        <tr>
-
-                            <td>Caderno</td>
-
-                            <th>Quantidade: 2</th>
-                        </tr>
-                        <tr>
-                            <td>Borracha</td>
-
-                            <th>Quantidade: 2</th>
-                        </tr>
-
-                        <tr>
-
-                            <td>Lápis de cor</td>
-
-                            <th>Quantidade: 2</th>
-                        </tr>
-                        <tr>
-
-                            <td>Tesoura</td>
-
-                            <th>Quantidade: 2</th>
-                        </tr>
-                        <tr>
-
-                            <td>Mochila</td>
-
-                            <th>Quantidade: 2</th>
-                        </tr>
+                            </select>
+                        </div>
+                    </div>
 
 
-
-                    </tbody>
-
-                </table>
-
-                <table style="margin-right: 50px;">
-
-                    <thead>
-
-                        <tr>
-                            <th colspan="4" id="tituloLista">Selecione quantos itens irá doar:</th>
-                        </tr>
-
-                    </thead>
-
-
-
-                    <tbody>
-
-                        <tr>
-                            <td>
-                                <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
-
-                                <a>
-                                    <span id="carrinhoIndex">?</span>
-                                </a>
-                                <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
-
-                                <a>
-                                    <span id="carrinhoIndex">?</span>
-                                </a>
-                                <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
-
-                                <a>
-                                    <span id="carrinhoIndex">?</span>
-                                </a>
-                                <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
-
-                                <a>
-                                    <span id="carrinhoIndex">?</span>
-                                </a>
-                                <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
-
-                                <a>
-                                    <span id="carrinhoIndex">?</span>
-                                </a>
-                                <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
-
-                                <a>
-                                    <span id="carrinhoIndex">?</span>
-                                </a>
-                                <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
-                            </td>
-                        </tr>
-
-
-
-                    </tbody>
-
-                </table>
-
-
-                <!--</div>-->
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <footer>
-        <div class="footer-container">
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="../front-end/img/logo-educadoe.svg" alt="" class="logo-educadoefooter">
+                    <div>
+                        <label for="ciclo" id="titulo_label">Ciclo/Série:</label>
+                        <br>
+                        <select name="ciclo" class="ciclo">
+                            <option value="teste1">teste 1</option>
+                            <option value="teste2">teste 2</option>
+                            <option value="teste3">teste 3</option>
+                            <option value="teste4">teste 4</option>
+                            <option value="teste5">teste 5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="escola" id="titulo_label">Escola:</label>
+                        <br>
+                        <select name="escola" class="escola">
+                            <option value="teste1">teste 1</option>
+                            <option value="teste2">teste 2</option>
+                            <option value="teste3">teste 3</option>
+                            <option value="teste4">teste 4</option>
+                            <option value="teste5">teste 5</option>
+                        </select>
+                    </div>
                 </div>
+            </form>
 
-                <div class="col-sm-6">
 
-                    <div class="social-media">
-                        <a class="social-media" href="#"> <i class="fab fa-facebook-f"></i></a>
-                        <a class="social-media" href="#"> <i class="fab fa-instagram-square"></i></a>
-                        <a class="social-media" href="#"> <i class="fab fa-twitter"></i></a>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+
+                        <!--Fluxo Doador<table style="margin-left: 100px;">
+
+                        <thead>
+
+                            <tr>
+                                <th colspan="4" id="tituloLista">Lista de itens necessários:</th>
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody>
+
+                            <tr>
+                                <td>Lapís</td>
+
+                                <th>Quantidade: 2</th>
+                            </tr>
+
+                            <tr>
+
+                                <td>Caderno</td>
+
+                                <th>Quantidade: 2</th>
+                            </tr>
+                            <tr>
+                                <td>Borracha</td>
+
+                                <th>Quantidade: 2</th>
+                            </tr>
+
+                            <tr>
+
+                                <td>Lápis de cor</td>
+
+                                <th>Quantidade: 2</th>
+                            </tr>
+                            <tr>
+
+                                <td>Tesoura</td>
+
+                                <th>Quantidade: 2</th>
+                            </tr>
+                            <tr>
+
+                                <td>Mochila</td>
+
+                                <th>Quantidade: 2</th>
+                            </tr>
+
+
+
+                        </tbody>
+
+                    </table>-->
+
+                        <table style="margin-right: 50px;">
+
+                            <thead>
+
+                                <tr>
+                                    <th colspan="4" id="tituloLista">Selecione quantos itens irá doar:</th>
+                                </tr>
+
+                            </thead>
+
+
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Lápis</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Caderno</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Canetas</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Borracha</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Lápis de cor</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Tesoura</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button id="buttonAdd" type="button" onclick="acrescentar()">+</button>
+
+                                        <a>
+                                            <span id="carrinhoIndex">0</span>
+                                        </a>
+                                        <button id="buttonAdd" type="button" onclick="diminuir()">-</button>
+                                    </td>
+                                    <td>Mochila</td>
+                                </tr>
+
+
+
+                            </tbody>
+
+                        </table>
+
 
                     </div>
 
+
                 </div>
+
             </div>
+
         </div>
 
-    </footer>
+
+        <footer>
+            <div class="footer-container">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="../front-end/img/logo-educadoe.svg" alt="" class="logo-educadoefooter">
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <div class="social-media">
+                            <a class="social-media" href="#"> <i class="fab fa-facebook-f"></i></a>
+                            <a class="social-media" href="#"> <i class="fab fa-instagram-square"></i></a>
+                            <a class="social-media" href="#"> <i class="fab fa-twitter"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
 
 </body>
 
