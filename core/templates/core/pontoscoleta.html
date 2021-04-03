@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+        <div class="col-sm-12">
+            <p><a class="meuperfil" href="/">Educa.doe > </a> Pontos de Coleta</p>
+         </div>
+  </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+        <h3 class="meuperfil">Pontos de Coleta</h3>
+        <p class="justificado">Para tornar o processo de doação de materiais escolares mais simples, o Educa.doe
+            conta com pontos de coleta espalhados pela cidade. Assim, o doador pode selecionar o local mais
+            próximo. Para isso, precisamos da sua ajuda. Disponibilizando um espaço de coleta em seu comércio,
+            você fortalece ainda mais a nossa corrente do bem. </p>
+        <h3 class="meuperfil">Como ser um ponto de coleta?</h3>
+        <p class="justificado">É muito simples: você faz o cadastro, avaliamos a possibilidade e passamos todas
+            as instruções necessárias. Venha! Faça parte da história de alguém. Realize o seu cadastro preenchendo
+            os dados abaixo: </p>
+    </div>
+    <div class="col-sm-6">
+        <img src="../front-end/img/pontosdecoleta.png" alt="" class="iconindex"></label>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+        <div class="retangulo2">
+        <h3 class="subtitulo">Dados da empresa:</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                 <label for="inputNomeLocal">Nome do local:</label>
+                 <input type="NomeLocal" class="form-control" id="input">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCNPJ">CNPJ:</label>
+                    <input type="CNPJ" class="form-control" id="input">
+                   </div>
+                   <div class="form-group col-md-6">
+                    <label for="inputRazaoSocial">Razão social:</label>
+                    <input type="RazaoSocial" class="form-control" id="input">
+                   </div>
+            </div>
+        </form>
+        <h3 class="subtitulo">Informações do seu negócio:</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCEP">CEP:</label>
+                    <input type="CEP" class="form-control" id="input">
+                   </div>
+                </div>
+                <div class="form-row">
+                   <div class="form-group col-md-6">
+                    <label for="inputCidade">Cidade:</label>
+                    <input type="Cidade" class="form-control" id="input">
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="inputEstado">Estado:</label>
+                    <select id="inputEstado" class="form-control">
+                      <option selected> </option>
+                      <option value="Acre">AC</option>
+                      <option value="Alagoas">AL</option>
+                      <option value="Amapá">AP</option>
+                      <option value="Amazonas">AM</option>
+                      <option value="Bahia">BA</option>
+                      <option value="Ceara">CE</option>
+                      <option value="Distrito Federal">DF</option>
+                      <option value="Espirito santo">ES</option>
+                      <option value="Goias">GO</option>
+                      <option value="Maranhao">MA</option>
+                      <option value="Mato Grosso">MT</option>
+                      <option value="Mato Grosso do sul">MS</option>
+                      <option value="Minas Gerais">MG</option>
+                      <option value="Pará">PA</option>
+                      <option value="Paraíba">PB</option>
+                      <option value="Paraná">PR</option>
+                      <option value="Pernambuco">PE</option>
+                      <option value="Piauí">PI</option>
+                      <option value="Rio de Janeiro">RJ</option>
+                      <option value="Rio Grande do Norte">RN</option>
+                      <option value="Rio Grande do Sul">RS</option>
+                      <option value="Rondônia">RO</option>
+                      <option value="Roraima">RR</option>
+                      <option value="Santa Catarina">SC</option>
+                      <option value="São Paulo">SP</option>
+                      <option value="Sergipe">SE</option>
+                      <option value="Tocantins">TO</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputBairro">Bairro:</label>
+                    <input type="Bairro" class="form-control" id="input">
+                   </div>
+                <div class="form-group col-md-8">
+                    <label for="inputEndereco">Endereço:</label>
+                    <input type="Endereco" class="form-control" id="input">
+                   </div>
+                   <div class="form-group col-md-4">
+                       <label for="inputNumeroEnd">Número:</label>
+                       <input type="NumeroEnd" class="form-control" id="input">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputTelefone">Telefone:</label>
+                        <input type="telefone" class="form-control" id="input" placeholder="DDD">
+                       </div>
+
+                       <div class="form-group col-md-6">
+                        <label for="inputTelefone">.</label>
+                        <input type="telefone" class="form-control" id="input">
+                       </div>
+            </div>
+        </form>
+     </div>
+     <input type="submit" value="Finalizar cadastro" id="buttonForm">
+  </div>
+{% endblock %}

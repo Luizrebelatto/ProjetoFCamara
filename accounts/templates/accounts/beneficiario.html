@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{% if user.is_anonymous %}
+<section id="section-register">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 mr-auto">
+                {% if messages %}
+                {% for message in messages %}
+                <div class="alert {{ message.tags }}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% endif %}
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom">Cadastre-se</legend>
+                        <div class="row">
+                        {{ form.media }}
+                        {{ form|crispy}}
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Registrar</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="border-top pt-3">
+                    <small class="texte-muted">
+                        Ja tem uma Conta?<a class="ml-2" href="#">Entrar</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% else %}
+<meta http-equiv="refresh" content="0; URL='{% url 'profile' %}'"/>
+{% endif %}
+
+<script>
+   $(document).ready(function(){
+   $('#id_fone').phoneBrazil();
+   $('.class-phone').phoneBrazil();
+   $('input[name=phone]').phoneBrazil();
+});
+</script>
+{% endblock %}

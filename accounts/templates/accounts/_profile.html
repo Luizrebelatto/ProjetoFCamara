@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<section id="section-register">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 mx-auto">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4">Informações Pessoais.</legend>
+
+                        {{ form.media }}
+                        {{ form | crispy }}
+                        {{ form2 | crispy }}
+
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
+                        <a class="btn btn btn-danger btn-lg btn-block" href="{% url 'profile' %}">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -5,16 +5,25 @@ from bootstrap_datepicker_plus import DatePickerInput
 from .models import CustomUser, Profile
 
 
-class CustomUserCreateForm(UserCreationForm, forms.ModelForm):
-
+class UserForm(UserCreationForm, forms.ModelForm):
     class Meta:
         model = CustomUser
         fields = [
-            'email',
             'first_name',
             'last_name',
+            'cpf',
+            'fone',
+            'adress',
+            'adress_number',
+            'city',
+            'uf',
+            'email',
         ]
         labels = {'username': 'Usuário'}
+
+    def clean(self, *args, **kwargs):
+        data = self.data
+        cleaned = self.cleaned_data
 
     def save(self, commit=True):
         user = super().save(commit=False)
@@ -27,16 +36,25 @@ class CustomUserCreateForm(UserCreationForm, forms.ModelForm):
         return user
 
 
-class CustomDonorCreateForm(UserCreationForm, forms.ModelForm):
-
+class DonorUserForm(UserCreationForm, forms.ModelForm):
     class Meta:
         model = CustomUser
         fields = [
-            'email',
             'first_name',
             'last_name',
+            'cpf',
+            'fone',
+            'adress',
+            'adress_number',
+            'city',
+            'uf',
+            'email',
         ]
         labels = {'username': 'Usuário'}
+
+    def clean(self, *args, **kwargs):
+        data = self.data
+        cleaned = self.cleaned_data
 
     def save(self, commit=True):
         user = super().save(commit=False)
@@ -53,11 +71,20 @@ class CustomUserChangeForm(forms.ModelForm):
 
     class Meta:
         model = CustomUser
-        fields = ['email', 'first_name', 'last_name']
+        fields = [
+            'email',
+            'first_name',
+            'last_name',
+            'cpf',
+            'fone',
+            'adress',
+            'adress_number',
+            'city',
+            'uf'
+        ]
 
 
 class ProfileChangeForm(forms.ModelForm):
-
     class Meta:
         model = Profile
-        fields = ['fone', 'cpf', 'adress', 'adress_number', 'city', 'uf', 'imagem']
+        fields = ['imagem']

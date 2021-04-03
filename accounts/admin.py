@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .forms import CustomUserCreateForm, CustomUserChangeForm
+from .forms import UserForm, CustomUserChangeForm
 
-from .models import CustomUser, Profile
+from .models import CustomUser, Profile, Dependente
 
 
 class UserCustomAdmin(UserAdmin):
@@ -16,7 +16,7 @@ class UserCustomAdmin(UserAdmin):
 
 @admin.register(CustomUser)
 class CustomUserAdmin(UserCustomAdmin):
-    add_form = CustomUserCreateForm
+    add_form = UserForm
     form = CustomUserChangeForm
     model = CustomUser
     list_display = ('username', 'first_name', 'last_name', 'email', 'is_staff', 'is_donor')
@@ -30,4 +30,11 @@ class CustomUserAdmin(UserCustomAdmin):
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('user', )
+    list_display = ('user',)
+    list_display_links = ('user',)
+
+
+@admin.register(Dependente)
+class ListaMaterialAdmin(admin.ModelAdmin):
+    list_display = ('dependente_nome', 'dependente_nascimento',)
+    list_display_links = ('dependente_nome',)

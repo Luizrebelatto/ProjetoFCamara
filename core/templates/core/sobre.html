@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="col-sm-12">
+        <p><a class="meuperfil" href="/">Educa.doe > </a> Sobre a Educa.doe</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="{% static 'vendor/img/iconsobre2.png' %}" alt="" class="iconindex"></label>
+        </div>
+        <div class="col-sm-6">
+            <h3>Missão</h3>
+            <p id="justificado">Nós do Educa.doe acreditamos que a educação seja um dos mais importantes pilares da
+                sociedade. Por isso, temos como missão ajudar estudantes da rede pública de ensino durante a caminhada.
+                Nessa corrente do bem, somos o elo entre pessoas interessadas em contribuir -os doadores -,
+                e o futuro do país - os beneficiários.</p>
+            <h3>Visão</h3>
+            <p id="justificado">A educação é o caminho mais curto entre o sonho e a realização dele.</p>
+            <h3>Valores</h3>
+            <p id="justificado">Pautada em valores como empatia, honestidade e determinação,
+                o Educa.doe quer ajudar a diminuir as desigualdades sociais no Brasil através do
+                incentivo à educação.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="faixasobre">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 id="titulowhite">Nossa Historia</h3>
+                <p id="justificado1">O Educa.doe nasceu da necessidade de se pensar em soluções para a aquisição de materiais escolares por estudantes da rede pública em dificuldades financeiras. Pensando nisso, e no poder da solidariedade enquanto agente transformador, nos mobilizamos para diminuir a distância entre o doador e quem precisa de ajuda, nosso beneficiário.</p>
+            </div>
+            <div class="col-sm-6">
+                <img class="iconindex" src="{% static 'vendor/img/iconsobre1.png' %}"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-4">
+        <h3 class="contato">Contato</h3>
+        <p id="justificado">Para maiores informações sobre o Educa.doe, entre em contato:<br> Tel.: (19) 3900-8314 <br> educa.doe@tera.com.br <br> Endereço: Chácaras Reunidas Anhanguera(Nova Veneza), Sumaré, SP</nr></p>
+    </div>
+</div>
+
+{% endblock %}

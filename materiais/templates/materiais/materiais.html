@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>Testando</h1>
+<div class="container">
+ <div class="row">
+  <div class="col-3">
+      <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Lista</legend>
+
+              {{ form.media }}
+              {{ form | crispy }}
+
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Salvar</button>
+              <a class="btn btn btn-danger btn-lg btn-block" href="#">Cancelar</a>
+          </div>
+      </form>
+  </div>
+     <div class="col-3">
+         <h1>Material: </h1>
+         {% for material in materiais %}
+         <h4>{{ material.nome }}</h4>
+         <h4>Lapis: {{ material.lapis }}</h4>
+         <h4>Caderno: {{ material.caderno }}</h4>
+         <h4>Canetas: {{ material.canetas }}</h4>
+         <h4>Borracha: {{ material.borracha }}</h4>
+         <h4>Lapis de Cor: {{ material.lapis_cor }}</h4>
+         <h4>Tesoura: {{ material.tesoura }}</h4>
+         <h4>Mochila: {{ material.mochila }}</h4>
+
+         {% endfor %}
+
+     </div>
+ </div>
+</div>
+
+
+
+{% endblock %}
