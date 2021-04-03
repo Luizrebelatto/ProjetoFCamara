@@ -96,6 +96,7 @@ nav #icon {
     width: 100%;
 }
 
+
 .row {
     margin-top: 80px;
 }
@@ -108,6 +109,12 @@ h2 {
 #titulo {
     margin-top: 10px;
     font-size: 25px;
+}
+
+#titulo2 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #7173AB;
 }
 
 #titulowhite {
@@ -286,6 +293,13 @@ h2 {
     line-height: 60px;
     display: flex;
     color: black;
+}
+
+.topico {
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+    color: #7173AB;
 }
 
 #lista {
@@ -506,6 +520,7 @@ background: #7173AB;
 #centralizar {
     margin: 0 auto;
     text-align: center;
+    padding: 2% 15%;
 }
 
 #containerContent{
