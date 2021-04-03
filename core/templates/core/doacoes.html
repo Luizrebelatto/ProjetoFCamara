@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+
+    <div class="col-sm-12">
+
+        <p><a class="meuperfil" href="/">Educa.doe > </a> Receba doações</p>
+
+     </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3 class="meuperfil">Receba doações</h3>
+            <p>Para estar apto a receber doações de materiais escolares pelo Educa.Doe, é necessário
+                que o estudante esteja matriculado em uma das escolas da rede pública de educação. O responsável cadastra
+                seus dados e de dependentes em nossa plataforma, informa os itens de que precisa e então nossa corrente do
+                bem entra em ação. Os doadores têm acesso à solicitação e se mobilizam para ajudar. </p>
+        </div>
+        <div class="col-sm-8">
+            <img src="{% static 'vendor/img/recebadoacoes.png' %}" alt="" class="iconindex"></label>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="centralizar">
+    <h3 id="titulo2">Como receber doações?</h3>
+        <p class="justificado">É rápido e fácil. Sendo um de nossos beneficiários, você cadastra as listas de
+                materiais de todos os seus dependentes em nosso sistema, que enviará uma a notificação assim que suas
+                solicitações estiverem disponíveis. Para isso, siga as etapas descritas abaixo:</p>
+        <h5 class="topico"><img src="{% static 'vendor/img/number1.png' %}" alt=""> Realize o cadastro como beneficiário</h5>
+        <p class="justificado">Acesse em nosso menu o botão “Cadastre-se” e encontre a opção de se cadastrar como beneficiário. Inclua os dados necessários. </p>
+        <h5 class="topico"><img src="{% static 'vendor/img/number2.png' %}" alt=""> Faça o login como beneficiário</h5>
+        <p class="justificado">Após realizar o cadastro como beneficiário, você será redirecionado a sua página de login, podendo acessar o seu painel de beneficiário.</p>
+        <h5 class="topico"><img src="{% static 'vendor/img/number3.png' %}" alt=""> Cadastre a lista de materiais necessários</h5>
+        <p class="justificado">Dentro de seu perfil, acesse o link de cadastrar materiais necessários, incluindo os itens e a quantidade necessária.</p>
+        <h5 class="topico"><img src="{% static 'vendor/img/number4.png' %}" alt="">Aguarde a notificação para coletar o material</h5>
+        <p class="justificado">Você será notificado por email quando o material estiver disponível no ponto de coleta selecionado por você.</p>
+</div>
+{% endblock %}

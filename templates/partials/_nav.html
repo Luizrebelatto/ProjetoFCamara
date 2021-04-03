@@ -11,16 +11,16 @@
             <hr>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="#">Sobre o Educa.doe</a>
+                    <a href="{% url 'sobre' %}">Sobre o Educa.doe</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Seja um doador</a>
+                    <a href="{% url 'seja-doador' %}">Seja um doador</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Receba doação</a>
+                    <a href="{% url 'receba-doacoes' %}">Receba doação</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Pontos de coleta</a>
+                    <a href="{% url 'pontos-coleta' %}">Pontos de coleta</a>
                 </li>
             <hr>
             </ul>
@@ -33,7 +33,7 @@
                     <button type="button" class="btn" data-toggle="dropdown">Olá, {{ user.first_name }}! <i class="fas fa-angle-down"></i> </button>
                     <div class="dropdown-menu">
                        <a class="dropdown-item" href="{% url 'profile' %}"> Meu Perfil</a>
-                       <a class="dropdown-item"> Minhas doações</a>
+                       <a class="dropdown-item" href="#"> Minhas doações</a>
                        <a class="dropdown-item"> Doar</a>
                        <a class="dropdown-item"> Sair</a>
                      </div>
