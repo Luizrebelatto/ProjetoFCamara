@@ -67,7 +67,10 @@ a:hover{
     text-decoration: underline;
 }
 
-
+table, td, th, tfoot {
+  padding: 5px;
+  
+        }
 
 nav #icon {
     color: #fff;
