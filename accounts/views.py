@@ -109,3 +109,7 @@ class DependenteCreateView(CreateView):
     def form_invalid(self, form):
         messages.error(self.request, 'Não foi possivel Criar a Conta')
         return super(DependenteCreateView, self).form_invalid(form)
+
+
+class MinhasDoacoesView(TemplateView):
+    template_name = 'accounts/doadordoacoes.html'

@@ -5,7 +5,8 @@ from .views import (
     UserProfileView,
     UserUpdateView,
     CadastroView,
-    DonorCreateView
+    DonorCreateView,
+    MinhasDoacoesView
 )
 
 
@@ -18,4 +19,5 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='accounts/logout.html'), name='logout'),
     path('profile/', UserProfileView.as_view(), name='profile'),
     path('<int:pk>/profile/', UserUpdateView.as_view(), name='profile-update'),
+    path('minhas-doacoes/', MinhasDoacoesView.as_view(), name='minhas-doacoes'),
 ]
