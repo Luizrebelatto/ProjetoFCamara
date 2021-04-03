@@ -15,7 +15,7 @@ body {
 #loginpage {
     background: #7173AB;
     width: 100%;
-    background-image: url("vectorlogin.png");
+    
     
 }
 
@@ -86,7 +86,7 @@ nav #icon {
     padding: 10px 10px;
 }
 
-#justificado{
+.justificado{
     text-align: justify;
     padding: 10px 30px 30px 10px;
 }
