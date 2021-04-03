@@ -26,5 +26,12 @@ class PontosColetaView(TemplateView):
     template_name = 'core/pontoscoleta.html'
 
 
+class PontosDoacaoView(TemplateView):
+    template_name = 'core/pontodoacao.html'
+
+
+class FacaDoacoesView(TemplateView):
+    template_name = 'core/facadoacoes.html'
+
 
 

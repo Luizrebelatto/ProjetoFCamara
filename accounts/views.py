@@ -113,3 +113,11 @@ class DependenteCreateView(CreateView):
 
 class MinhasDoacoesView(TemplateView):
     template_name = 'accounts/doadordoacoes.html'
+
+
+class MinhasSolicitacoesView(TemplateView):
+    template_name = 'accounts/solicitacao.html'
+
+
+class CadastrarListaView(TemplateView):
+    template_name = 'accounts/cadastrarlista.html'

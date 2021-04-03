@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+        <h3 class="meuperfil">Meu Perfil :)</h3>
+</div>
+    <div class="boasvindas">
+        <h3 id="titulodoacao">Faça a sua doação.</h3>
+    </div>
+    <div class="retangulo">
+        <p id="legendadoacao">alunos que precisam de doações nas localidades buscadas.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="listaContainer">
+                        <ul>
+                            <li id="titulo-lista">
+                                <p id="list-titulo">Usuário 1</p>
+                            </li>
+                            <li>
+                                <p id="list-content">Escola Municipal Dr.Leandro Francheschini</p>
+                            </li>
+                            <li>
+                                <p id="list-content">Bairro: Jardim São Carlos</p>
+                            </li>
+                            <li>
+                                <p id="list-content">Sumaré, São Paulo</p>
+                            </li>
+                            <li>
+                                <p id="listBold">Ponto de Coleta: Red Cell(Comércio)</p>
+                            </li>
+                            <li>
+                                <div id="iconList">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p id="listBold2"> Endereço do ponto de coleta: Avenida da Amizade, 1900</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="submit" value="Continuar Doação" id="buttonDoacao">Continuar Doação</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

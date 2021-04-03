@@ -4,7 +4,7 @@
 {% block content %}
 <section id="section-profile">
     <div>
-        <h3 id="meuperfil">Meu Perfil :)</h3>
+        <h3 class="meuperfil">Meu Perfil :)</h3>
     </div>
     <div class="boasvindas">
         <h3 id="titulo">Olá, {{ user.first_name }}, aqui é seu perfil, fique a vontade!</h3>
@@ -43,18 +43,18 @@
                         <i class="fa fa-hand-holding-heart" id="icons"></i>
                     </div>
                     <div id="icons">
-                        <a class="subtitulo" href="#">Ver doações disponíveis</a>
+                        <a class="subtitulo" href="{% url 'faca-doacoes' %}">Ver doações disponíveis</a>
                         <i class="fa fa-box" id="icons"></i>
                     </div>
                 </div>
             {% else %}
              <div class="col-sm-6">
                     <div id="icons">
-                        <a class="subtitulo" href="#">Cadastrar listas </a>
+                        <a class="subtitulo" href="{% url 'cadastrar-lista' %}">Cadastrar listas </a>
                         <i class="far fa-file-alt" id="icons"></i>
                     </div>
                     <div id="icons">
-                        <a class="subtitulo" href="#">Minhas solicitações</a>
+                        <a class="subtitulo" href="{% url 'minhas-solicitacoes' %}">Minhas solicitações</a>
                         <i class="fas fa-box-open" id="icons"></i>
                     </div>
                </div>

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h3 class="meuperfil">Meu Perfil :)</h3>
+</div>
+
+<div class="boasvindas">
+        <h3 id="tituloDoacao">Faça sua Doação.</h3>
+</div>
+<div class="retanguloForm">
+    <p id="description">Procure um aluno através da localidade.</p>
+    <div class="container">
+        <div class="contentLocal">
+            <div>
+                <form action="">
+                    <div id="containerContent">
+                        <div>
+                            <label for="estados">Estado:</label>
+                            <br>
+                            <select name="estados" id="estados">
+                                <option value="Acre">AC</option>
+                                <option value="Alagoas">AL</option>
+                                <option value="Amapá">AP</option>
+                                <option value="Amazonas">AM</option>
+                                <option value="Bahia">BA</option>
+                                <option value="Ceara">CE</option>
+                                <option value="Distrito Federal">DF</option>
+                                <option value="Espirito santo">ES</option>
+                                <option value="Goias">GO</option>
+                                <option value="Maranhao">MA</option>
+                                <option value="Mato Grosso">MT</option>
+                                <option value="Mato Grosso do sul">MS</option>
+                                <option value="Minas Gerais">MG</option>
+                                <option value="Pará">PA</option>
+                                <option value="Paraíba">PB</option>
+                                <option value="Paraná">PR</option>
+                                <option value="Pernambuco">PE</option>
+                                <option value="Piauí">PI</option>
+                                <option value="Rio de Janeiro">RJ</option>
+                                <option value="Rio Grande do Norte">RN</option>
+                                <option value="Rio Grande do Sul">RS</option>
+                                <option value="Rondônia">RO</option>
+                                <option value="Roraima">RR</option>
+                                <option value="Santa Catarina">SC</option>
+                                <option value="São Paulo">SP</option>
+                                <option value="Sergipe">SE</option>
+                                <option value="Tocantins">TO</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="municipios">Municipio:</label>
+                            <br>
+                            <select name="municipios" id="municipios">
+                                <option value="campinas">Campinas</option>
+                                <option value="carapicuíba">Carapicuíba</option>
+                                <option value="diadema">Diadema</option>
+                                <option value="franca">Franca</option>
+                                <option value="guarulhos">Volvo</option>
+                                <option value="praia grande">Praia Grande</option>
+                                <option value="piracicaba">Piracicaba</option>
+                                <option value="são josé dos Campos">São José dos Campos</option>
+                                <option value="são paulo">São Paulo</option>
+                                <option value="sumaré">Sumaré</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="bairros">Bairro:</label>
+                            <br>
+                            <select name="bairros" id="bairros">
+                                <option value="centro">Centro</option>
+                                <option value="jardim paulista">Jardim Paulista</option>
+                                <option value="parque emília">Parque Emília</option>
+                                <option value="vila juliana">Vila Juliana</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+         </div>
+    </div>
+    <a href="{% url 'pontos-doacao' %}"><input type="submit" value="Buscar" id="buttonForm"></a>
+
+</div>
+{% endblock %}
