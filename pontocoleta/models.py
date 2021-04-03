@@ -16,6 +16,7 @@ class Base(models.Model):
 class PontosColeta(Base):
     ponto_nome = models.CharField(max_length=50, verbose_name='Nome do Local')
     ponto_cnpj = models.CharField(max_length=50, verbose_name='CNPJ')
+    ponto_razao = models.CharField(max_length=50, verbose_name='Razão Social')
     ponto_cep = models.CharField(max_length=80, verbose_name='CEP')
     ponto_cidade = models.CharField(max_length=80, verbose_name='Cidade')
     ponto_uf = models.CharField(
@@ -54,7 +55,7 @@ class PontosColeta(Base):
     )
     ponto_bairro = models.CharField(max_length=30, verbose_name='Bairro')
     ponto_endereco = models.CharField(max_length=80, verbose_name='Endereço')
-    ponto_numero = models.PositiveIntegerField(verbose_name='Numero')
+    ponto_numero = models.CharField('Telefone', max_length=15)
     ponto_telefone = models.CharField(max_length=20, verbose_name='Telefone')
 
     def __str__(self):

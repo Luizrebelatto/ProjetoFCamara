@@ -13,18 +13,23 @@ from django.views.generic import (
 from .forms import (
     UserForm,
     CustomUserChangeForm,
-    ProfileChangeForm
+    ProfileChangeForm,
+    DonorUserForm
 )
 from .models import CustomUser, Dependente
 
 # Create your views here.
 
 
+class CadastroView(TemplateView):
+    template_name = 'accounts/index.html'
+
+
 class UserCreateView(CreateView):
     model = CustomUser
     form_class = UserForm
-    template_name = 'accounts/index.html'
-    success_url = reverse_lazy('donatario')
+    template_name = 'accounts/beneficiario.html'
+    success_url = reverse_lazy('beneficiario')
 
     def form_valid(self, form):
         messages.success(self.request, f'Conta Criada com Sucesso!!')
@@ -33,6 +38,21 @@ class UserCreateView(CreateView):
     def form_invalid(self, form):
         messages.error(self.request, 'Não foi possivel Criar a Conta')
         return super(UserCreateView, self).form_invalid(form)
+
+
+class DonorCreateView(CreateView):
+    model = CustomUser
+    form_class = DonorUserForm
+    template_name = 'accounts/beneficiario.html'
+    success_url = reverse_lazy('donatario')
+
+    def form_valid(self, form):
+        messages.success(self.request, f'Conta Criada com Sucesso!!')
+        return super().form_valid(form)
+
+    def form_invalid(self, form):
+        messages.error(self.request, 'Não foi possivel Criar a Conta')
+        return super(DonorCreateView, self).form_invalid(form)
 
 
 class UserProfileView(LoginRequiredMixin, TemplateView):
@@ -79,7 +99,7 @@ class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 class DependenteCreateView(CreateView):
     model = CustomUser
     form_class = UserForm
-    template_name = 'accounts/index.html'
+    template_name = 'accounts/beneficiario.html'
     success_url = reverse_lazy('donatario')
 
     def form_valid(self, form):
@@ -88,4 +108,4 @@ class DependenteCreateView(CreateView):
 
     def form_invalid(self, form):
         messages.error(self.request, 'Não foi possivel Criar a Conta')
-        return super(UserCreateView, self).form_invalid(form)
+        return super(DependenteCreateView, self).form_invalid(form)

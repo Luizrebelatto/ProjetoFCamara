@@ -35,7 +35,8 @@
                        <a class="dropdown-item" href="{% url 'profile' %}"> Meu Perfil</a>
                        <a class="dropdown-item" href="#"> Minhas doações</a>
                        <a class="dropdown-item"> Doar</a>
-                       <a class="dropdown-item"> Sair</a>
+                       <a class="dropdown-item" href="{% url 'logout' %}"> Sair</a>
+
                      </div>
                     {% else %}
                     <button type="button" class="btn" data-toggle="dropdown">Olá, (beneficiario)! <i class="fas fa-angle-down"></i> </button>
@@ -43,21 +44,21 @@
                        <a class="dropdown-item" href="{% url 'profile' %}"> Meu Perfil</a>
                        <a class="dropdown-item"> Minhas listas</a>
                        <a class="dropdown-item"> Recebidos</a>
-                       <a class="dropdown-item"> Sair</a>
+                       <a class="dropdown-item" href="{% url 'logout' %}"> Sair</a>
                     </div>
                     {% endif %}
                 </div>
                 </li>
                <li class="nav-item">
-                   <a href="#">SAIR</a>
+                   <a href="{% url 'logout' %}">SAIR</a>
                 </li>
                 <!-- endif -->
                 {% else %}
                 <li class="nav-item">
-                    <a href="#">LOGIN</a>
+                    <a href="{% url 'login' %}">LOGIN</a>
                 </li>
                 <li class="nav-item">
-                    <a id="cadastro" href="{% url 'donatario' %}">CADASTRE-SE</a>
+                    <a id="cadastro" href="{% url 'cadastro' %}">CADASTRE-SE</a>
                 </li>
                 {% endif %}
             </ul>
