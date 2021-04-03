@@ -14,11 +14,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     
     <title>Educa.doe - Login</title>
 
+    <script>
+        $(function() {
+
+$('#doador-form-link').click(function(e) {
+    $("#doador-form").delay(100).fadeIn(100);
+     $("#beneficiario-form").fadeOut(100);
+    $('#beneficiario-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+});
+$('#beneficiario-form-link').click(function(e) {
+    $("#beneficiario-form").delay(100).fadeIn(100);
+     $("#doador-form").fadeOut(100);
+    $('#doador-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+});
+
+});
+    </script>
+
 </head>
-<body>
+<body id="loginpage">
 
 
     <nav class="navbar navbar-expand-xl navbar-dark">
@@ -41,7 +65,7 @@
             <a href="#">Receba doação</a>
          </li>   
         <li class="nav-item">
-            <a  class="example" href="#">Pontos de coleta</a>
+            <a  class="example" href="pontosdecoleta.html">Pontos de coleta</a>
          </li>
              
         <li class="nav-item">
@@ -55,65 +79,131 @@
   
 </nav>
 
-<div class="container">
-    <div class="row">
+    <div class="container">
 
-        <div class="col-sm-6">
-            <h2>ENTRAR COMO DOADOR</h2>
-            <div class="login-form">
-            <form>
-            <label>Digite seu usuário:</label>
-           
-                 <div>
-                <input type="text" placeholder="Usuário" required/>
-                </div>
-            
-                <label>Digite sua senha:</label>
-                <div>
-                <input type="password" placeholder="Senha" required/>
-                </div>
-        
-                <div>
-                <input type="submit" value="Log In"/>
-                </div>
-            
-                <div>
-                <a href="#">Esqueceu sua senha?</a>
-                </div>
-                </form>
+        <div class="col-sm-12">
 
-            </div>
-        </div>
+        <p id="whitea"><a id="whitea" href="index.html">Educa.doe></a>Login</p>
 
-        <div class="col-sm-6">
-            <h2>ENTRAR COMO ALUNO</h2>
-            <div class="login-form">
-            <form>
-            <label>Digite seu usuário:</label>
-           
-                 <div>
-                <input type="text" placeholder="Usuário" required/>
-                </div>
-            
-                <label>Digite sua senha:</label>
-                <div>
-                <input type="password" placeholder="Senha" required/>
-                </div>
-        
-                <div>
-                <input type="submit" value="Log In"/>
-                </div>
-            
-                <div>
-                <a href="#">Esqueceu sua senha?</a>
-                </div>
-                </form>
-
-            </div>
         </div>
 
     </div>
+
+<!-- <div>
+
+<img src="../front-end/img/vectorlogin.png" alt="" id="vectorlogin">
+
+</div> -->
+
+<div class="container" id="loginform">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-login">
+                <div class="panel-heading">
+                    
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <a href="#" class="active" id="doador-form-link">Acessar como doador</a>
+                        </div>
+                   
+                        <div class="col-xl-6">
+                            <a href="#" id="beneficiario-form-link">Acessar como beneficiário</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="doador-form" action="#" method="post" role="form" style="display: block;">
+                                <div class="form-group">
+                                    <label for="emaildoador">E-mail</label>
+                                    <input type="text" name="usernamedoador" id="usernamedoador" tabindex="1" class="form-control" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12" id="centralizar">
+                                            <input type="submit" value="Continuar"id="buttonForm2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <a href="#" tabindex="5" class="forgot-password">Esqueci meu e-mail ou senha</a>   
+                                            </div>                                                                                                                                    
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <a href="#" tabindex="5" class="forgot-password">Usuário novo? Realize seu cadastro</a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                            <form id="beneficiario-form" action="#" method="post" role="form" style="display: none;">
+                                    <div class="form-group">
+                                    <label for="emailbeneficiario">E-mail</label>
+                                    <input type="text" name="usernamebeneficiario" id="usernamebeneficiario" tabindex="1" class="form-control" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-12" id="centralizar">
+                                            <input type="submit" value="Continuar"id="buttonForm2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <a href="#" tabindex="5" class="forgot-password">Esqueci meu e-mail ou senha</a>   
+                                            </div>                                                                                                                                     
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <a href="#" tabindex="5" class="forgot-password">Usuário novo? Realize seu cadastro</a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            </div>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
 
 <footer>
