@@ -45,6 +45,7 @@ body {
     width: 100%;
 }
 
+
 #whitea {
     color: white;
 }
@@ -62,6 +63,11 @@ nav {
     width: 150px;
 }
 
+nav ul {
+    float: right;
+    margin-right: 10px;
+}
+
 nav li {
     display: inline-block;
     margin: 0 8px;
@@ -77,6 +83,7 @@ nav a {
     border-radius: 3px;
 }
 
+
 .example {
     margin-right: 150px;
 }
@@ -89,7 +96,7 @@ a:hover{
 table, td, th, tfoot {
   padding: 5px;
 
-}
+        }
 
 nav #icon {
     color: #fff;
@@ -172,14 +179,14 @@ h2 {
     color: white;
 }
 
-  .btn {
-    color:#f1f1f1;
+.btn {
+    color: #f1f1f1;
     padding: 1px 1px;
     font-size: 13px;
   }
 
 
-  .cadastro {
+#cadastro {
     background: #9E9FC9;
     border: 1px solid #B4B5DB;
     border-radius: 5px;
