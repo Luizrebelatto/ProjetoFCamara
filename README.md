@@ -35,3 +35,8 @@ Tutorial:
         python manage.py runserver
 
     Será exibido o IP para acesso.
+
+Logins: 
+
+- beneficiario@admin.com / 1234
+- doador@admin.com / 1234
