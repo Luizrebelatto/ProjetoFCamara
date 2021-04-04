@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            carrinhoIndex1.innerHTML = 0
+        })
+
+        var count1 = 0;
+
+        function acrescentar1() {
+            count1++;
+            carrinhoIndex1.innerHTML = count1
+        }
+        function diminuir1() {
+            count1--;
+            carrinhoIndex1.innerHTML = count1
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex2.innerHTML = 0
+        })
+
+        var count2 = 0;
+
+        function acrescentar2() {
+            count2++;
+            carrinhoIndex2.innerHTML = count2
+        }
+        function diminuir2() {
+            count2--;
+            carrinhoIndex2.innerHTML = count2
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex3.innerHTML = 0
+        })
+
+        var count3 = 0;
+
+        function acrescentar3() {
+            count3++;
+            carrinhoIndex3.innerHTML = count3
+        }
+        function diminuir3() {
+            count3--;
+            carrinhoIndex3.innerHTML = count3
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex4.innerHTML = 0
+        })
+
+        var count4 = 0;
+
+        function acrescentar4() {
+            count4++;
+            carrinhoIndex4.innerHTML = count4
+        }
+        function diminuir4() {
+            count4--;
+            carrinhoIndex4.innerHTML = count4
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex5.innerHTML = 0
+        })
+
+        var count5 = 0;
+
+        function acrescentar5() {
+            count5++;
+            carrinhoIndex5.innerHTML = count5
+        }
+        function diminuir5() {
+            count5--;
+            carrinhoIndex5.innerHTML = count5
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex6.innerHTML = 0
+        })
+
+        var count6 = 0;
+
+        function acrescentar6() {
+            count6++;
+            carrinhoIndex6.innerHTML = count6
+        }
+        function diminuir6() {
+            count6--;
+            carrinhoIndex6.innerHTML = count6
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex7.innerHTML = 0
+        })
+
+        var count7 = 0;
+
+        function acrescentar7() {
+            count7++;
+            carrinhoIndex7.innerHTML = count7
+        }
+        function diminuir7() {
+            count7--;
+            carrinhoIndex7.innerHTML = count7
+
+        }
+
+
+
+    </script>
+
+    <title>Educa.doe - Doador</title>
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-xl navbar-dark">
+
+        <label><a href="index.html"><img src="../front-end/img/logoeducadoebranco.svg" alt="" class="logo"></a></label>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#">Sobre o Educa.doe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Seja um doador</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Receba doação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="example" href="#">Pontos de coleta</a>
+                </li>
+
+                <li>
+                    <div class="dropdown">
+                        <button type="button" class="btn" data-toggle="dropdown">Olá, (beneficiário)! <i
+                                class="fas fa-angle-down"></i> </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item"> Meu Perfil</a>
+                            <a class="dropdown-item"> Minhas listas</a>
+                            <a class="dropdown-item"> Recebidos</a>
+                            <a class="dropdown-item"> Sair</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="cadastro" href="#">Sair</a>
+                </li>
+            </ul>
+
+    </nav>
+
+    <div>
+
+        <h3 class="meuperfil">Meu Perfil :)</h3>
+
+    </div>
+
+    <div class="boasvindas">
+
+        <!--Fluxo Doador<h3 id="titulodoacao">Faça a sua doação.</h3>-->
+        <h3 id="tituloDoacao">Faça a sua doação.</h3>
+
+
+
+    </div>
+
+    <div class="retangulo2">
+
+
+        <div class="tituloMateriais">
+            <h3>Doação para:</h3>
+            <p>Usuário 1</p>
+            <p>Escola Municipal Dr.Leandro Franchechini</p>
+        </div>
+        <div id="alinharListas">
+
+
+            <div id="centralizar">
+                <table id="tableTam">
+
+                    <thead>
+
+                        <tr>
+                            <th colspan="4" id="tituloLista">Lista de itens necessários:</th>
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Lapís</td>
+
+                            <th>Quantidade: 2</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Caderno</td>
+
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+                            <td>Borracha</td>
+
+                            <th>Quantidade: 2</th>
+                        </tr>
+
+                        <tr>
+
+                            <td>Lápis de cor</td>
+
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+
+                            <td>Tesoura</td>
+
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+
+                            <td>Mochila</td>
+
+                            <th>Quantidade: 2</th>
+                        </tr>
+
+
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+
+            <div id="centralizar">
+
+                <table id="tableTam">
+
+                    <thead>
+
+                        <tr>
+                            <th colspan="4" id="tituloLista">Selecione quantos itens irá doar</th>
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir1()">-</button>
+                                <a>
+                                    <span id="carrinhoIndex1">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar1()">+</button>
+
+                            </td>
+                            <td>Lápis</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir2()">-</button>
+                                <a>
+                                    <span id="carrinhoIndex2">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar2()">+</button>
+                            </td>
+                            <td>Caderno</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir3()">-</button>
+                                <a>
+                                    <span id="carrinhoIndex3">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar3()">+</button>
+
+                            </td>
+                            <td>Canetas</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir4()">-</button>
+
+                                <a>
+                                    <span id="carrinhoIndex4">0</span>
+                                </a>
+
+                                <button id="buttonAdd" type="button" onclick="acrescentar4()">+</button>
+                            </td>
+                            <td>Borracha</td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <button id="buttonAdd" type="button" onclick="diminuir5()">-</button>
+
+                                <a>
+                                    <span id="carrinhoIndex5">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar5()">+</button>
+                            </td>
+                            <td>Lápis de cor</td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <button id="buttonAdd" type="button" onclick="diminuir6()">-</button>
+
+                                <a>
+                                    <span id="carrinhoIndex6">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar6()">+</button>
+                            </td>
+                            <td>Tesoura</td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <button id="buttonAdd" type="button" onclick="diminuir7()">-</button>
+
+                                <a>
+                                    <span id="carrinhoIndex7">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar7()">+</button>
+                            </td>
+                            <td>Mochila</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--Modal-->
+    <div class="w3-container">
+
+        <button onclick="document.getElementById('id01').style.display='block'" id="buttonForm3">Concluir
+            doação</button>
+
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+
+
+                    <i class="far fa-check-circle" id="iconModal"></i>
+
+                    <h2>Doação Cadastrada! <i class="fas fa-heart" id="heart"></i></h2>
+
+                    <div id="modalText">
+                        <h5>Você deverá enviar a sua doação ao local</h5>
+                        <h5>selecionado até o dia 25/04/2021</h5>
+                    </div>
+
+                    <div id="buttonSair"
+                        style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <button id="buttonModal">Voltar para o painel</button>
+
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-display-bottomcenter">ou Sair</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fim Modal-->
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../front-end/img/logo-educadoe.svg" alt="" class="logo-educadoefooter">
+                </div>
+
+                <div class="col-sm-6">
+
+                    <div class="social-media">
+                        <a class="social-media" href="#"> <i class="fab fa-facebook-f"></i></a>
+                        <a class="social-media" href="#"> <i class="fab fa-instagram-square"></i></a>
+                        <a class="social-media" href="#"> <i class="fab fa-twitter"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
