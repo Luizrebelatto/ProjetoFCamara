@@ -289,7 +289,6 @@ h2 {
     border-radius: 10px;
     padding: 5% 5%;
 }
-
 .subtitulo {
     font-style: normal;
     font-size: 20px;
@@ -518,6 +517,25 @@ background: #7173AB;
     background: #77A584;
     color: white;
     
+}
+
+#buttonForm3{
+    width:151px;
+    height: 45px;
+    background: #77A584;
+    color: white;
+    margin-left: 45%;
+    margin-top: 2%;
+    
+}
+#buttonModal{
+    width:198px;
+    height: 47px;
+    background: #9F5FC4;
+    color: white;
+    
+    margin-top: 2%;
+
 }
 
 #centralizar {
@@ -787,4 +805,46 @@ select.escola{
     color: white;
     margin-top: 5%;
     margin-left: 3%;
+}
+
+#alinharListas{
+    display: flex;
+    flex-direction: row;
+}
+
+#tableTam{
+    width: 300px;
+}
+#iconModal{
+   font-size: 80px;
+   color:green;
+   justify-content: center;
+   margin-top: 15%;
+   margin-left: 46%;
+}
+h2.w3-container{
+    font-weight: bold;
+}
+
+.modal-descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+#modalText{
+    text-align: center;
+}
+#buttonSair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+#heart{
+    color: #B53737;
 }
