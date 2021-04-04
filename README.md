@@ -1,4 +1,5 @@
 # fcamara-squad3-test
+
 Django Backend
 Bootstrap(HTML+CSS) Frontend
 
@@ -20,7 +21,7 @@ Tutorial:
 
 5) - Ativar a venv:
     Para ativar a venv?:
-    Acessar a pasta /venv que foi criada, depois a pasta /Scripts     e digitar activate.bat
+    Acessar a pasta /venv que foi criada, depois a pasta /Scripts e digitar activate.bat, duplo clique no arquivo
 
     caminho: ./venv/scripts/activate.bat
 
