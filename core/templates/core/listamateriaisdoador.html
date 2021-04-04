@@ -1,0 +1,273 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div>
+        <h3 class="meuperfil">Meu Perfil :)</h3>
+ </div>
+    <div class="boasvindas">
+        <!--Fluxo Doador<h3 id="titulodoacao">Faça a sua doação.</h3>-->
+        <h3 id="tituloDoacao">Faça a sua doação.</h3>
+    </div>
+    <div class="retangulo2">
+        <div class="tituloMateriais">
+            <h3>Doação para:</h3>
+            <p>Usuário 1</p>
+            <p>Escola Municipal Dr.Leandro Franchechini</p>
+        </div>
+        <div id="alinharListas">
+            <div id="centralizar">
+                <table id="tableTam">
+                    <thead>
+                        <tr>
+                            <th colspan="4" id="tituloLista">Lista de itens necessários:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lapís</td>
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+                            <td>Caderno</td>
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+                            <td>Borracha</td>
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+                            <td>Lápis de cor</td>
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+                            <td>Tesoura</td>
+                            <th>Quantidade: 2</th>
+                        </tr>
+                        <tr>
+                            <td>Mochila</td>
+                            <th>Quantidade: 2</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="centralizar">
+                <table id="tableTam">
+                    <thead>
+                        <tr>
+                            <th colspan="4" id="tituloLista">Selecione quantos itens irá doar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir1()">-</button>
+                                <a>
+                                    <span id="carrinhoIndex1">0</span>
+                                </a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar1()">+</button>
+                            </td>
+                            <td>Lápis</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir2()">-</button>
+                                <a><span id="carrinhoIndex2">0</span></a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar2()">+</button>
+                            </td>
+                            <td>Caderno</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir3()">-</button>
+                                <a><span id="carrinhoIndex3">0</span></a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar3()">+</button>
+                            </td>
+                            <td>Canetas</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir4()">-</button>
+                                <a><span id="carrinhoIndex4">0</span></a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar4()">+</button>
+                            </td>
+                            <td>Borracha</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir5()">-</button>
+                                <a><span id="carrinhoIndex5">0</span></a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar5()">+</button>
+                            </td>
+                            <td>Lápis de cor</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir6()">-</button>
+                                <a><span id="carrinhoIndex6">0</span></a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar6()">+</button>
+                            </td>
+                            <td>Tesoura</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="buttonAdd" type="button" onclick="diminuir7()">-</button>
+                                <a><span id="carrinhoIndex7">0</span></a>
+                                <button id="buttonAdd" type="button" onclick="acrescentar7()">+</button>
+                            </td>
+                            <td>Mochila</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Modal-->
+    <div class="w3-container">
+
+        <button onclick="document.getElementById('id01').style.display='block'" id="buttonForm3">Concluir
+            doação</button>
+
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+
+
+                    <i class="far fa-check-circle" id="iconModal"></i>
+
+                    <h2>Doação Cadastrada! <i class="fas fa-heart" id="heart"></i></h2>
+
+                    <div id="modalText">
+                        <h5>Você deverá enviar a sua doação ao local</h5>
+                        <h5>selecionado até o dia 25/04/2021</h5>
+                    </div>
+
+                    <div id="buttonSair"
+                        style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <a href="{% url 'profile' %}"><button id="buttonModal">Voltar para o painel</button></a>
+
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-display-bottomcenter">ou Sair</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fim Modal-->
+
+
+
+<script>
+        $(document).ready(function () {
+            carrinhoIndex1.innerHTML = 0
+        })
+
+        var count1 = 0;
+
+        function acrescentar1() {
+            count1++;
+            carrinhoIndex1.innerHTML = count1
+        }
+        function diminuir1() {
+            count1--;
+            carrinhoIndex1.innerHTML = count1
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex2.innerHTML = 0
+        })
+
+        var count2 = 0;
+
+        function acrescentar2() {
+            count2++;
+            carrinhoIndex2.innerHTML = count2
+        }
+        function diminuir2() {
+            count2--;
+            carrinhoIndex2.innerHTML = count2
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex3.innerHTML = 0
+        })
+
+        var count3 = 0;
+
+        function acrescentar3() {
+            count3++;
+            carrinhoIndex3.innerHTML = count3
+        }
+        function diminuir3() {
+            count3--;
+            carrinhoIndex3.innerHTML = count3
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex4.innerHTML = 0
+        })
+
+        var count4 = 0;
+
+        function acrescentar4() {
+            count4++;
+            carrinhoIndex4.innerHTML = count4
+        }
+        function diminuir4() {
+            count4--;
+            carrinhoIndex4.innerHTML = count4
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex5.innerHTML = 0
+        })
+
+        var count5 = 0;
+
+        function acrescentar5() {
+            count5++;
+            carrinhoIndex5.innerHTML = count5
+        }
+        function diminuir5() {
+            count5--;
+            carrinhoIndex5.innerHTML = count5
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex6.innerHTML = 0
+        })
+
+        var count6 = 0;
+
+        function acrescentar6() {
+            count6++;
+            carrinhoIndex6.innerHTML = count6
+        }
+        function diminuir6() {
+            count6--;
+            carrinhoIndex6.innerHTML = count6
+
+        }
+
+        $(document).ready(function () {
+            carrinhoIndex7.innerHTML = 0
+        })
+
+        var count7 = 0;
+
+        function acrescentar7() {
+            count7++;
+            carrinhoIndex7.innerHTML = count7
+        }
+        function diminuir7() {
+            count7--;
+            carrinhoIndex7.innerHTML = count7
+
+        }
+</script>
+{% endblock %}

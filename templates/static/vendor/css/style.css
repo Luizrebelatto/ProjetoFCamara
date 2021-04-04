@@ -5,12 +5,13 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;    
+    list-style: none;
 }
 
 body {
     background-color: #F3F3F3;
 }
+
 .avatar-img {
   border-radius: 50%;
 }
@@ -76,7 +77,6 @@ nav a {
     border-radius: 3px;
 }
 
-
 .example {
     margin-right: 150px;
 }
@@ -84,6 +84,11 @@ nav a {
 a:hover{
     color: #9E9FC9;
     text-decoration: underline;
+}
+
+table, td, th, tfoot {
+  padding: 5px;
+
 }
 
 nav #icon {
@@ -112,6 +117,7 @@ nav #icon {
     margin-top:30px;
     width: 100%;
 }
+
 
 .row {
     margin-top: 80px;
@@ -293,19 +299,15 @@ h2 {
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 .retangulo2 {
     margin: 0 auto;
     width: 90%;
-    height: 814px;
+    height: 80%;
     background: #FFFFFF;
     box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
     border-radius: 10px;
     padding: 5% 5%;
 }
->>>>>>> 7b6a01dec6ea9a19e7794f953626ba0388ed565c
-
 .subtitulo {
     font-style: normal;
     font-size: 20px;
@@ -525,7 +527,7 @@ background: #7173AB;
     background: #77A584;
     color: white;
     margin-left: 45%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 #buttonForm2{
@@ -533,6 +535,25 @@ background: #7173AB;
     height: 45px;
     background: #77A584;
     color: white;
+
+}
+
+#buttonForm3{
+    width:151px;
+    height: 45px;
+    background: #77A584;
+    color: white;
+    margin-left: 45%;
+    margin-top: 2%;
+
+}
+#buttonModal{
+    width:198px;
+    height: 47px;
+    background: #9F5FC4;
+    color: white;
+
+    margin-top: 2%;
 
 }
 
@@ -693,7 +714,6 @@ background: #7173AB;
     margin-top: 100px;
 }
 
-<<<<<<< HEAD
 .tituloMateriais{
     margin-top: 10px;
     text-align: left;
@@ -730,7 +750,8 @@ background: #7173AB;
 }
 
 #tituloLista{
-    font-size: 25px;
+    font-size: 15px;
+    margin: 0 auto;
 }
 
 .retanguloLista {
@@ -780,7 +801,7 @@ select.escola{
     background: #f3f3f3;
     width: 230px;
     height: 44px;
-=======
+}
 
 
 #localizacao {
@@ -798,11 +819,51 @@ select.escola{
 
 }
 
+
 #justificado1{
     color: white;
     margin-top: 5%;
     margin-left: 3%;
->>>>>>> 7b6a01dec6ea9a19e7794f953626ba0388ed565c
 }
 
+#alinharListas{
+    display: flex;
+    flex-direction: row;
+}
 
+#tableTam{
+    width: 300px;
+}
+#iconModal{
+   font-size: 80px;
+   color:green;
+   justify-content: center;
+   margin-top: 15%;
+   margin-left: 46%;
+}
+h2.w3-container{
+    font-weight: bold;
+}
+
+.modal-descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+#modalText{
+    text-align: center;
+}
+#buttonSair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+#heart{
+    color: #B53737;
+}
