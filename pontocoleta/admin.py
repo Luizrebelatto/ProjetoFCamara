@@ -7,4 +7,3 @@ from .models import PontosColeta
 @admin.register(PontosColeta)
 class ListaMaterialAdmin(admin.ModelAdmin):
     list_display = ('ponto_nome', 'ponto_cidade', 'ponto_uf')
-    list_display_links = ('ponto_nome',)

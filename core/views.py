@@ -1,9 +1,5 @@
 from django.shortcuts import render
-from django.contrib.auth.mixins import (
-    LoginRequiredMixin,
-    UserPassesTestMixin
-)
-from django.views.generic import TemplateView, CreateView, UpdateView
+from django.views.generic import TemplateView
 
 
 class HomeView(TemplateView):
@@ -34,4 +30,5 @@ class FacaDoacoesView(TemplateView):
     template_name = 'core/facadoacoes.html'
 
 
-
+class DoadorListaView(TemplateView):
+    template_name = 'core/listamateriaisdoador.html'

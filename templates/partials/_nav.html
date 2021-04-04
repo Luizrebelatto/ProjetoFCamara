@@ -30,7 +30,7 @@
                 <li>
                 <div class="dropdown">
                     {% if user.is_donor %}
-                    <button type="button" class="btn" data-toggle="dropdown">Olá, {{ user.first_name }}! <i class="fas fa-angle-down"></i> </button>
+                    <button type="button" class="btn" data-toggle="dropdown">Olá, (doador)! <i class="fas fa-angle-down"></i> </button>
                     <div class="dropdown-menu">
                        <a class="dropdown-item" href="{% url 'profile' %}"> Meu Perfil</a>
                        <a class="dropdown-item" href="{% url 'minhas-doacoes' %}"> Minhas doações</a>

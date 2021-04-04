@@ -13,7 +13,7 @@
     <div class="p-3" id="perfilUser">
         <img class="avatar-img" src="{{ user.profile.imagem.thumb.url }}" alt="Avatar" width="110" height="110">
     </div>
-        <a href="{% url 'profile-update' user.id %}"><p id="legenda">Adicionar imagem</p></a>
+        <a href="#"><p id="legenda">Adicionar imagem</p></a>
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
@@ -23,13 +23,13 @@
                </div>
                 <ul>
                 <li>
-                    <a id="lista" href="{% url 'profile-update' user.id %}">Alterar endereço de e-mail</a>
+                    <a id="lista" href="#">Alterar endereço de e-mail</a>
                 </li>
                 <li>
                     <a id="lista" href="#">Alterar senha de acesso</a>
                 </li>
                 <li>
-                    <a id="lista" href="{% url 'profile-update' user.id %}">Alterar seu endereço</a>
+                    <a id="lista" href="#">Alterar seu endereço</a>
                 </li>
                 <li>
                     <a id="lista" href="#">Alterar dados dos seus dependentes</a>
