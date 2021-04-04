@@ -7,7 +7,7 @@ Tutorial:
 1) - Baixar e Intalar Python 3.9.X (com PIP) (Adicionar no PATH) - https://www.python.org/downloads/
 
 2) - Clonar o projeto do github:
-    git clone http://url-do-projeto-no-git/
+    git clone https://github.com/Luizrebelatto/ProjetoFCamara.git
 
 3) - Abrir terminal(CMD/TERMINAL ou VSCode/CMD) e acessar a pasta raiz do projeto (pelo terminal).
 
