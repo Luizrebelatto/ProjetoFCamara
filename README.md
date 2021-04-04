@@ -20,7 +20,7 @@ Tutorial:
 
 5) - Ativar a venv:
     Para ativar a venv?:
-    Acessar a pasta /venv que foi criada, depois a pasta /Scripts     e digitar cctivate.bat
+    Acessar a pasta /venv que foi criada, depois a pasta /Scripts     e digitar activate.bat
 
     caminho: ./venv/scripts/activate.bat
 
