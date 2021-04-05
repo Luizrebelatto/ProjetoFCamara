@@ -39,7 +39,7 @@ Acreditamos que com a união de todos, é possível realizar grandes feitos, ain
 
 4) - Criar uma Virtual Env (para instalar as dependências):
       Na pasta Raiz do Projeto, digitar:
-    <br>`python -m venv venv #` (comando para criar a venv).
+    <br>`python -m venv venv` (comando para criar a venv).
     Será criada uma pasta chamada "venv".
 
 5) - Ativar a venv:
@@ -50,7 +50,7 @@ Acreditamos que com a união de todos, é possível realizar grandes feitos, ain
 
 6) - Instalar dependências:
     Voltar para a pasta raiz do projeto e digitar no terminal:
-    <br>`pip install -r requirements.txt #` para instalar todas as dependências.
+    <br>`pip install -r requirements.txt` para instalar todas as dependências.
 
 7) - Inicializar Servidor Web Interno DJANGO.
 
