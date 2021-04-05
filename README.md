@@ -1,11 +1,11 @@
-# fcamara-squad3-test
+# fcamara-squad03
 
-Django Backend
-Bootstrap(HTML+CSS) Frontend
+Django Backend |
+Bootstrap (HTML+CSS) Frontend
 
 Tutorial:
 
-1) - Baixar e Intalar Python 3.9.X (com PIP) (Adicionar no PATH) - https://www.python.org/downloads/
+1) - Baixar e Instalar Python 3.9.X (com PIP) (Adicionar no PATH) - https://www.python.org/downloads/
 
 2) - Clonar o projeto do github:
     git clone https://github.com/Luizrebelatto/ProjetoFCamara.git
@@ -13,11 +13,10 @@ Tutorial:
 3) - Abrir terminal(CMD/TERMINAL ou VSCode/CMD) e acessar a pasta raiz do projeto (pelo terminal).
 
 
-4) - Criar uma Virtual Env (Para instalar as dependencias):
-    Na pasta Raiz do Projeto.
-    Digitar:
-    python -m venv venv #(comando para criar a venv)
-    Será criada uma pasta chamada "venv"
+4) - Criar uma Virtual Env (para instalar as dependências):
+    Na pasta Raiz do Projeto, digitar:
+    python -m venv venv # (comando para criar a venv).
+    Será criada uma pasta chamada "venv".
 
 5) - Ativar a venv:
     Para ativar a venv?:
@@ -25,9 +24,9 @@ Tutorial:
 
     caminho: ./venv/scripts/activate.bat
 
-6) - Instalar dependencias:
-    Voltar para a pasta raiz do projeto e digitar:
-    pip install -r requirements.txt # para instalar todas as     dependências.
+6) - Instalar dependências:
+    Voltar para a pasta raiz do projeto e digitar no terminal:
+    pip install -r requirements.txt # para instalar todas as dependências.
 
 7) - Inicializar Servidor Web Interno DJANGO.
 
@@ -37,7 +36,7 @@ Tutorial:
 
     Será exibido o IP para acesso.
 
-Logins: 
+Logins / Senhas
 
 - beneficiario@admin.com / 1234
 - doador@admin.com / 1234
