@@ -64,6 +64,8 @@ Acreditamos que com a união de todos, é possível realizar grandes feitos, ain
     
 ## ⌨️ Login e Senha
 
+Para que seja possível testar o fluxo de ambos usuários, criamos logins para acessar as respectivas interfaces. Utilize os logins descritos abaixo para testar os perfis de doador e beneficiário:
+
 - Beneficiário
   <br>
   Login:`beneficiario@admin.com`
