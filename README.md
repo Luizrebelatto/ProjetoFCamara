@@ -16,6 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Bootstrap
 - HTML
 - CSS
+- JavaScript
 - Python
 - Django
 
@@ -24,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto Educa.doe visa ajudar a diminuir as desigualdades sociais através do engajamento da própria sociedade. Somos uma organização sem fins lucrativos criada para permitir que cada cidadão possa protagonizar a mudança que deseja ver no cenário da educação brasileira.  
 
-Acreditamos que com a união de todos, é possível realizar grandes feitos, ainda tenham início com pequenas ações. Doando materiais escolares para estudantes carentes, você está contribuindo para a permanência de muitos deles na escola. E muito mais do que isso: está criando uma nova realidade para o Brasil.  
+Acreditamos que com a união de todos, é possível realizar grandes feitos, ainda tenham início com pequenas ações. Doando materiais escolares para estudantes carentes, você está contribuindo para a permanência de muitos deles na escola. E muito mais do que isso: está criando uma nova realidade para o Brasil. 
 
 ## 🚀 Como executar
 
@@ -38,7 +39,7 @@ Acreditamos que com a união de todos, é possível realizar grandes feitos, ain
 
 4) - Criar uma Virtual Env (para instalar as dependências):
       Na pasta Raiz do Projeto, digitar:
-    `python -m venv venv #` (comando para criar a venv).
+    <br>`python -m venv venv #` (comando para criar a venv).
     Será criada uma pasta chamada "venv".
 
 5) - Ativar a venv:
@@ -48,8 +49,8 @@ Acreditamos que com a união de todos, é possível realizar grandes feitos, ain
     caminho: ./venv/scripts/activate.bat
 
 6) - Instalar dependências:
-    Voltar para a pasta raiz do projeto e digitar no terminal:<br>
-    `pip install -r requirements.txt #` para instalar todas as dependências.
+    Voltar para a pasta raiz do projeto e digitar no terminal:
+    <br>`pip install -r requirements.txt #` para instalar todas as dependências.
 
 7) - Inicializar Servidor Web Interno DJANGO.
 
