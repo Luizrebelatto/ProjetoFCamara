@@ -19,6 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Python
 - Django
+- SqLite3
 
 
 ## 💻 Projeto
