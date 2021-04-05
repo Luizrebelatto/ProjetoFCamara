@@ -48,13 +48,13 @@ Acreditamos que com a união de todos, é possível realizar grandes feitos, ain
     caminho: ./venv/scripts/activate.bat
 
 6) - Instalar dependências:
-    Voltar para a pasta raiz do projeto e digitar no terminal:
+    Voltar para a pasta raiz do projeto e digitar no terminal:<br>
     `pip install -r requirements.txt #` para instalar todas as dependências.
 
 7) - Inicializar Servidor Web Interno DJANGO.
 
     Após todas as dependências instaladas, para rodar o servidor web interno do Django. 
-    Na pasta raiz, digitar no terminal:
+    Na pasta raiz, digitar no terminal:<br>
     
     `python manage.py runserver`
        
